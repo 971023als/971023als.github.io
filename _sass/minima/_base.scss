@@ -1,9 +1,10 @@
 @use "sass:color";
 
 // 기본 색상 변수
-$base-color: #333333;
-$grey-color-dark: color.adjust($base-color, $lightness: -25%);
-$grey-color-light: color.adjust($base-color, $lightness: 25%);
+// 색상 정의
+$base-color: #333333; // 기본 색상
+$grey-color-dark: #555555; // 회색
+$grey-color-light: #eeeeee; // 밝은 회색
 $background-color: #ffffff;
 $link-color: #1a73e8;
 $link-hover-color: #0056b3;
