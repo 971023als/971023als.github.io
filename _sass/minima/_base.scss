@@ -1,0 +1,16 @@
+@use "sass:color";
+
+// 기본 색상 변수
+$base-color: #333333;
+$grey-color-dark: color.adjust($base-color, $lightness: -25%);
+$grey-color-light: color.adjust($base-color, $lightness: 25%);
+$background-color: #ffffff;
+$link-color: #1a73e8;
+$link-hover-color: #0056b3;
+
+// 기본 텍스트 스타일
+body {
+  font-family: Arial, sans-serif;
+  color: $base-color;
+  background-color: $background-color;
+}

@@ -26,6 +26,7 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-admin
 
 # Google Analytics
 google_analytics: "G-EKFW13SDS5"
@@ -62,6 +63,18 @@ collections:
   pages:
     output: true
 
-# Serve static files from additional directories
+# Static file settings
 static_files:
-  - assets/uploads # 업로드된 파일들이 정적으로 서비스되도록 설정
+  - assets/uploads # 정적 파일 경로 추가
+
+# Sass configuration
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Serve settings (Optional)
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default" # 기본 레이아웃 설정

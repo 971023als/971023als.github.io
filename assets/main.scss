@@ -1,0 +1,50 @@
+// Minima 테마 관련 파일 포함
+@use "minima" as *;
+
+// 기본 스타일 추가
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+// 예제 스타일
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 1rem;
+  color: #2a7ae2;
+}
+
+a {
+  color: #2a7ae2;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+// 기본 레이아웃 정리
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.footer {
+  background-color: #222;
+  color: #aaa;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.8em;
+}
