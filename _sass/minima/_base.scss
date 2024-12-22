@@ -1,17 +1,12 @@
-@use "sass:color";
+// 최소한의 기본 변수 정의
+$base-font-family: "Arial", sans-serif !default;
+$base-font-size: 16px !default;
+$base-font-weight: 400 !default;
+$base-line-height: 1.6 !default;
 
-// 기본 색상 변수
-// 색상 정의
-$base-color: #333333; // 기본 색상
-$grey-color-dark: #555555; // 회색
-$grey-color-light: #eeeeee; // 밝은 회색
-$background-color: #ffffff;
-$link-color: #1a73e8;
-$link-hover-color: #0056b3;
-
-// 기본 텍스트 스타일
+// 기본 바디 스타일 적용
 body {
-  font-family: Arial, sans-serif;
-  color: $base-color;
-  background-color: $background-color;
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  background-color: #ffffff;
+  color: #333333;
 }
