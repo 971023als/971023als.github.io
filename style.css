@@ -1,1 +1,211 @@
-body {    font-family: Arial, sans-serif;    line-height: 1.6;    margin: 0;    padding: 0;    background-color: #f4f4f9;    color: #333;}header {    background: #333;    color: #fff;    padding: 10px 20px;    text-align: center;}h1 {    font-size: 2.5em;}p {    margin: 20px;    text-align: center;}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 헤더 그림자 */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* 메뉴 간격 */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+    padding-bottom: 5px;
+}
+
+nav ul li a.active {
+    border-bottom: 2px solid #fff;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Hover 강조 색상 */
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 강도 */
+}
+
+h1 {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    color: #444; /* 제목 색상 */
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 15px; /* 문단 간격 */
+}
+
+footer {
+    background-color: #222;
+    color: #ddd;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+    margin-top: 20px;
+    border-top: 1px solid #444; /* 푸터 상단 경계선 */
+}
+
+footer a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #fff; /* 푸터 링크 Hover 색상 */
+}
+
+a {
+    color: #007BFF; /* 링크 기본 색상 */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3; /* Hover 색상 */
+}
+
+/* 이미지 스타일 */
+img {
+    max-width: 100%; /* 이미지를 컨테이너 너비에 맞게 조정 */
+    height: auto;
+    display: block;
+    margin: 20px auto; /* 이미지를 중앙 정렬 */
+    border-radius: 10px; /* 이미지를 부드럽게 처리 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+}
+
+/* 모바일 최적화 */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    main {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 0.9em;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+}
+
+.uploads {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.file-list ul {
+    padding-left: 20px;
+}
+
+.post-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.image-gallery {
+    margin-top: 20px;
+}
+
+.blog-posts ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.blog-posts ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.blog-posts ul li:hover {
+    background-color: #f1f1f1;
+}
+
+.blog-posts ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.blog-posts ul li a:hover {
+    color: #007BFF;
+}
+
+.blog-posts ul li p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.post-thumbnail {
+    max-width: 100px;
+    margin-right: 10px;
+    border-radius: 5px;
+    float: left;
+}
