@@ -17,6 +17,7 @@
     <meta name="twitter:image" content="{{ site.logo | relative_url }}">
     <title>{{ page.title | escape }}</title>
     <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+    <link rel="preload" href="/assets/fonts/my-font.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <script src="{{ '/scripts.js' | relative_url }}" defer></script>
 </head>
 <body>
@@ -30,13 +31,13 @@
             </ul>
         </nav>
         <!-- 다크 모드 버튼 추가 -->
-        <button id="theme-toggle" aria-label="Toggle dark mode">🌓</button>
+        <button id="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">🌓</button>
     </header>
     <!-- 헤더 끝 -->
 
     <main>
         <!-- 검색 기능 추가 -->
-        <section class="search-bar">
+        <section class="search-bar" aria-live="polite">
             <input type="text" placeholder="Search posts..." aria-label="Search posts">
             <button type="button" aria-label="Search">검색</button>
         </section>
@@ -57,9 +58,9 @@
             <h2>Recent Posts</h2>
             <ul class="post-list" aria-label="최근 게시물 리스트">
                 {% for post in site.posts %}
-                    <li class="post-item">
+                    <li class="post-item" data-categories="{{ post.categories | join: ',' }}">
                         {% if post.image %}
-                            <img src="{{ post.image | relative_url | default: site.url | append: '/assets/default-thumbnail.jpg' }}" 
+                            <img src="/assets/default-thumbnail.jpg" data-src="{{ post.image | relative_url }}" 
                                  alt="포스트 {{ post.title }}의 대표 이미지" 
                                  class="post-thumbnail" 
                                  loading="lazy" 
@@ -72,10 +73,10 @@
                             <a href="{{ post.url | relative_url }}">더 보기</a>
                         </p>
                         <div class="social-share">
-                            <a href="https://twitter.com/share?url={{ post.url | absolute_url }}&text={{ post.title }}" target="_blank" aria-label="Share on Twitter">
+                            <a href="https://twitter.com/share?url={{ post.url | absolute_url }}&text={{ post.title }}" target="_blank" aria-label="Share '{{ post.title }}' on Twitter">
                                 <img src="/assets/twitter-icon.png" alt="Share on Twitter">
                             </a>
-                            <a href="https://www.facebook.com/sharer/sharer.php?u={{ post.url | absolute_url }}" target="_blank" aria-label="Share on Facebook">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u={{ post.url | absolute_url }}" target="_blank" aria-label="Share '{{ post.title }}' on Facebook">
                                 <img src="/assets/facebook-icon.png" alt="Share on Facebook">
                             </a>
                         </div>
@@ -88,14 +89,65 @@
     <!-- 푸터 시작 -->
     <footer class="site-footer">
         <p>&copy; {{ "now" | date: "%Y" }} {{ site.author.name | escape }}</p>
-        <ul>
+        <p>운영자: {{ site.author.name }} | 이메일: <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
+        <ul role="list" aria-label="Footer links">
             <li><a href="mailto:{{ site.author.email }}">Contact</a></li>
             <li><a href="{{ site.author.twitter }}">Twitter</a></li>
             <li><a href="{{ site.author.github }}">GitHub</a></li>
             <li><a href="/sitemap.xml">Sitemap</a></li>
             <li><a href="/privacy-policy">Privacy Policy</a></li>
+            <li><a href="/terms-of-service">Terms of Service</a></li>
+            <li><a href="/about-us">About Us</a></li>
         </ul>
     </footer>
     <!-- 푸터 끝 -->
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const currentTheme = localStorage.getItem('theme') || 'light';
+
+        if (currentTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+            themeToggle.setAttribute('aria-pressed', 'true');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const isDarkMode = document.body.classList.toggle('dark-mode');
+            localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            themeToggle.setAttribute('aria-pressed', isDarkMode);
+        });
+
+        // Lazy Loading 개선
+        const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.dataset.src || img.src;
+                    observer.unobserve(img);
+                }
+            });
+        });
+
+        lazyImages.forEach(img => observer.observe(img));
+
+        // 검색 기능
+        document.querySelector('.search-bar button').addEventListener('click', () => {
+            const query = document.querySelector('.search-bar input').value.toLowerCase();
+            document.querySelectorAll('.post-item').forEach(item => {
+                const title = item.querySelector('a').textContent.toLowerCase();
+                item.style.display = title.includes(query) ? 'block' : 'none';
+            });
+        });
+
+        // 카테고리 필터 기능
+        document.getElementById('categories').addEventListener('change', (e) => {
+            const selectedCategory = e.target.value;
+            document.querySelectorAll('.post-item').forEach(item => {
+                const categories = item.dataset.categories || '';
+                item.style.display = selectedCategory === 'all' || categories.includes(selectedCategory) ? 'block' : 'none';
+            });
+        });
+    </script>
 </body>
 </html>
