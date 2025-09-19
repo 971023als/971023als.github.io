@@ -1,0 +1,80 @@
+# Welcome to Jekyll!
+# This config file is for settings that affect your whole blog.
+
+# Site settings
+title: "내 블로그"
+email: "971023als@gmail.com"
+description: "GitHub Pages와 Jekyll로 만든 블로그"
+baseurl: "" # 루트 디렉터리 사용
+url: "http://127.0.0.1:4000" # 로컬 서버 URL
+
+twitter_username: "jekyllrb"
+github_username: "971023als"
+
+# Post settings
+future: true
+timezone: "Asia/Seoul" # 시간대를 명시적으로 설정
+encoding: "UTF-8" # UTF-8 인코딩 설정
+
+# Author settings
+author:
+  name: "이민형"
+  email: "971023als@gmail.com"
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+# - jekyll-admin
+
+# Google Analytics
+google_analytics: "G-EKFW13SDS5"
+
+# Include directories (assets/uploads 포함)
+include:
+  - assets/uploads
+
+# Exclude from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - favicon.ico
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM # GitHub Flavored Markdown 사용
+  syntax_highlighter_opts:
+    block: true
+    inline: true
+
+# Collections (if using additional pages like 'about')
+collections:
+  pages:
+    output: true
+
+# Static file settings
+static_files:
+  - assets/uploads # 정적 파일 경로 추가
+
+# Sass configuration
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Serve settings (Optional)
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default" # 기본 레이아웃 설정

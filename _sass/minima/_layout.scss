@@ -1,0 +1,5 @@
+@use "minima/variables" as vars;
+
+.border-top {
+  border-top: 5px solid vars.$grey-color-dark;
+}
