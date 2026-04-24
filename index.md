@@ -30,7 +30,7 @@ title: "홈"
 <a href="/about" class="button">About Me</a>
 <a href="/categories" class="button">Explore Categories</a>
 
-<img src="/assets/banner.jpg" alt="블로그 배너 이미지" class="homepage-banner">
+<img src="/assets/banner.png" alt="블로그 배너 이미지" class="homepage-banner">
 
 <footer>
     <p>&copy; {{ "now" | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
