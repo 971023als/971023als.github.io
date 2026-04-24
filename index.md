@@ -1,45 +1,61 @@
 ---
 layout: default
-title: "홈"
+title: "Home"
 ---
 
-# {{ site.title }}
-{{ site.description }}
+<div class="hero">
+    <h1>이민형</h1>
+    <p>사용자 중심의 웹 환경을 설계하고 AI 기술을 탐구하는 개발자입니다.</p>
+    <div class="hero-btns">
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="/about" class="btn" style="background: transparent; color: var(--primary-color); border: 1px solid var(--primary-color);">About Me</a>
+    </div>
+</div>
 
-<p>안녕하세요! 이 블로그는 {{ site.title }}에서 다양한 정보와 이야기를 공유하기 위해 만들어졌습니다.</p>
+<section id="skills">
+    <h2>Skills & Technologies</h2>
+    <div class="skills-grid">
+        <div class="skill-tag">JavaScript</div>
+        <div class="skill-tag">React</div>
+        <div class="skill-tag">Python</div>
+        <div class="skill-tag">Node.js</div>
+        <div class="skill-tag">Git / GitHub</div>
+        <div class="skill-tag">AI / LLM</div>
+    </div>
+</section>
 
-<form action="/search" method="get" class="search-form">
-    <input type="text" name="query" placeholder="Search posts..." aria-label="Search posts">
-    <button type="submit">Search</button>
-</form>
+<section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
+        <div class="project-card">
+            <div class="project-info">
+                <h3>Portfolio Website</h3>
+                <p>Jekyll과 GitHub Pages를 활용한 개인 브랜딩 포트폴리오 구축.</p>
+                <a href="#" class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;">View Details</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-info">
+                <h3>AI Blogging Assistant</h3>
+                <p>AI를 활용하여 콘텐츠 생성을 자동화하는 워크플로우 연구.</p>
+                <a href="#" class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;">View Details</a>
+            </div>
+        </div>
+    </div>
+</section>
 
-<section>
-    <h2>Latest Posts</h2>
-    <ul>
-        {% for post in site.posts limit:5 %}
-        <li>
+<section id="blog">
+    <h2>Latest Insights</h2>
+    <ul class="post-list">
+        {% for post in site.posts limit:3 %}
+        <li class="post-item">
             <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-            <p>{{ post.excerpt | truncate: 100 }}</p>
+            <p>{{ post.excerpt | strip_html | truncate: 120 }}</p>
             <p><small>{{ post.date | date: "%Y-%m-%d" }}</small></p>
         </li>
         {% endfor %}
     </ul>
-    <a href="/blog" class="button">View All Posts</a>
-</section>
-
-<a href="/about" class="button">About Me</a>
-<a href="/categories" class="button">Explore Categories</a>
-
-<img src="/assets/banner.png" alt="블로그 배너 이미지" class="homepage-banner">
-
-<footer>
-    <p>&copy; {{ "now" | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
-    <ul>
-        <li><a href="/sitemap.xml">Sitemap</a></li>
-        <li><a href="/privacy-policy">Privacy Policy</a></li>
-    </ul>
-    <div class="social-links">
-        <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank">Twitter</a>
-        <a href="https://github.com/{{ site.author.github }}" target="_blank">GitHub</a>
+    <div style="text-align: center; margin-top: 2rem;">
+        <a href="/blog" class="btn" style="background: var(--text-muted);">See All Posts</a>
     </div>
-</footer>
+</section>

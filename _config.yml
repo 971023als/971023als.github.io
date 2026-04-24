@@ -2,11 +2,11 @@
 # This config file is for settings that affect your whole blog.
 
 # Site settings
-title: "내 블로그"
+title: "이민형 | Portfolio"
 email: "971023als@gmail.com"
-description: "GitHub Pages와 Jekyll로 만든 블로그"
+description: "사용자 중심의 웹 환경을 설계하고 AI 기술을 탐구하는 개발자 이민형의 포트폴리오입니다."
 baseurl: "" # 루트 디렉터리 사용
-url: "http://127.0.0.1:4000" # 로컬 서버 URL
+url: "https://971023als.github.io" # 실제 배포 URL로 업데이트
 
 twitter_username: "jekyllrb"
 github_username: "971023als"
