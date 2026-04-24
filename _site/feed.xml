@@ -1,1 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-12-23T01:45:56+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">내 블로그</title><subtitle>GitHub Pages와 Jekyll로 만든 블로그</subtitle><author><name>이민형</name><email>971023als@gmail.com</email></author><entry><title type="html">업로드된 파일 예제</title><link href="http://localhost:4000/2024/12/22/example-post.html" rel="alternate" type="text/html" title="업로드된 파일 예제" /><published>2024-12-22T00:00:00+09:00</published><updated>2024-12-22T00:00:00+09:00</updated><id>http://localhost:4000/2024/12/22/example-post</id><content type="html" xml:base="http://localhost:4000/2024/12/22/example-post.html"><![CDATA[<p>게시물 내용이 여기에 들어갑니다.</p>]]></content><author><name>이민형</name><email>971023als@gmail.com</email></author><summary type="html"><![CDATA[게시물 내용이 여기에 들어갑니다.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/uploads/example-image.jpg" /><media:content medium="image" url="http://localhost:4000/assets/uploads/example-image.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-04-24T23:51:48+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">이민형 | Portfolio</title><subtitle>사용자 중심의 웹 환경을 설계하고 AI 기술을 탐구하는 개발자 이민형의 포트폴리오입니다.</subtitle><author><name>이민형</name><email>971023als@gmail.com</email></author><entry><title type="html">AI와 함께하는 블로그 관리 시작</title><link href="http://localhost:4000/updates/2026/04/24/ai-assisted-blogging.html" rel="alternate" type="text/html" title="AI와 함께하는 블로그 관리 시작" /><published>2026-04-24T23:15:00+09:00</published><updated>2026-04-24T23:15:00+09:00</updated><id>http://localhost:4000/updates/2026/04/24/ai-assisted-blogging</id><content type="html" xml:base="http://localhost:4000/updates/2026/04/24/ai-assisted-blogging.html"><![CDATA[<p>안녕하세요! 오늘은 인공지능 어시스턴트의 도움을 받아 블로그 관리를 시작한 첫 날입니다.</p>
+
+<p>앞으로 이 블로그를 통해 다음과 같은 내용들을 공유할 예정입니다:</p>
+<ol>
+  <li><strong>기술 트렌드</strong>: 최신 프로그래밍 및 AI 기술 소식</li>
+  <li><strong>개발 일지</strong>: 개인 프로젝트 진행 과정 및 문제 해결 기록</li>
+  <li><strong>일상 생각</strong>: 기술 외적으로 느끼는 다양한 단상들</li>
+</ol>
+
+<p>Jekyll과 GitHub Pages를 활용하여 보다 깔끔하고 전문적인 공간으로 가꾸어 나가겠습니다. 많은 관심 부탁드립니다!</p>]]></content><author><name>이민형</name><email>971023als@gmail.com</email></author><category term="updates" /><summary type="html"><![CDATA[안녕하세요! 오늘은 인공지능 어시스턴트의 도움을 받아 블로그 관리를 시작한 첫 날입니다.]]></summary></entry><entry><title type="html">업로드된 파일 예제</title><link href="http://localhost:4000/examples/uploads/2024/12/22/example-post.html" rel="alternate" type="text/html" title="업로드된 파일 예제" /><published>2024-12-22T00:00:00+09:00</published><updated>2024-12-22T00:00:00+09:00</updated><id>http://localhost:4000/examples/uploads/2024/12/22/example-post</id><content type="html" xml:base="http://localhost:4000/examples/uploads/2024/12/22/example-post.html"><![CDATA[<h1 id="업로드된-파일-예제">업로드된 파일 예제</h1>
+
+<p>이 게시물은 업로드된 파일의 예제를 보여줍니다. 자세한 설명과 관련된 코드는 아래에서 확인하실 수 있습니다.</p>
+
+<h2 id="예제-코드">예제 코드</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">upload_example</span><span class="p">(</span><span class="n">file_path</span><span class="p">):</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">파일 업로드 성공: </span><span class="si">{</span><span class="n">file_path</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="related-posts">Related Posts</h2>
+<ul>
+  <li><a href="/uploads/security-guide">파일 업로드 보안 가이드</a></li>
+  <li><a href="/uploads/image-optimization">이미지 최적화 팁</a></li>
+</ul>
+
+<h2 id="what-do-you-think">What do you think?</h2>
+<p>이 게시물에 대한 의견이 있으신가요? <a href="#comments">댓글</a>로 남겨주세요!</p>
+
+<p><img src="/assets/uploads/example-image.jpg" alt="업로드된 파일의 예제 이미지" /></p>]]></content><author><name>이민형</name><email>971023als@gmail.com</email></author><category term="Examples" /><category term="Uploads" /><category term="File" /><category term="Example" /><summary type="html"><![CDATA[업로드된 파일의 예제와 관련된 유용한 정보를 제공합니다.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/uploads/example-image.jpg" /><media:content medium="image" url="http://localhost:4000/assets/uploads/example-image.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

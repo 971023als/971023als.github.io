@@ -54,9 +54,10 @@ exclude:
 markdown: kramdown
 kramdown:
   input: GFM # GitHub Flavored Markdown 사용
+  syntax_highlighter: rouge
   syntax_highlighter_opts:
-    block: true
-    inline: true
+    span_element: "code"
+
 
 # Collections (if using additional pages like 'about')
 collections:
