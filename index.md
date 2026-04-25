@@ -137,6 +137,20 @@ title: "Home"
                 <a href="/projects/mms-lms-interpretation/" class="btn btn-small">View Details</a>
             </div>
         </div>
+        <div class="project-card">
+            <div class="project-info">
+                <h3>SMS Retention Compliance</h3>
+                <p>
+                    문자 발송 이력 및 접속 로그의 보관 기간에 관한 3대 법령(PIPA, 통신비밀보호법, 전기통신사업법) 기반 법적 준거성 검토 리포트입니다.
+                </p>
+                <ul class="project-points">
+                    <li>개인정보보호법 기반 접속 기록 보관 기준 분석</li>
+                    <li>통신사실확인자료 및 번호 변작 방지 자료 보관 기간 검토</li>
+                    <li>통합 보관 정책 수립을 위한 법적 근거 가이드라인</li>
+                </ul>
+                <a href="/projects/sms-retention-compliance/" class="btn btn-small">View Details</a>
+            </div>
+        </div>
     </div>
 </section>
 
