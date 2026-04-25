@@ -150,4 +150,74 @@ permalink: /about/
             <a href="mailto:971023als@gmail.com" class="btn">971023als@gmail.com</a>
         </div>
     </div>
+
+    <div class="archive-section">
+        <h3>📚 Knowledge Base &amp; Learning Path</h3>
+        <p>지금까지의 학습 기록과 외부 활동 자료들을 정리해둔 아카이브입니다.</p>
+
+        <div class="archive-grid">
+            <!-- 2. 자격증 -->
+            <div class="archive-category">
+                <h4>자격증 <span>Certification</span></h4>
+                <ul class="archive-list">
+                    <li><a href="https://www.notion.so/32970f8eb2a24b0586384a9edf254efe?pvs=21" target="_blank">자격증 공부</a></li>
+                    <li><a href="https://www.notion.so/d44f1022682940588ae187c44e608e20?pvs=21" target="_blank">자격증 취득현황</a></li>
+                    <li><a href="https://www.notion.so/dae6508a4bc542a3826912ef18afc246?pvs=21" target="_blank">자격증 계획</a></li>
+                </ul>
+            </div>
+
+            <!-- 3. Best of Best -->
+            <div class="archive-category">
+                <h4>Best of Best <span>BoB</span></h4>
+                <ul class="archive-list">
+                    <li><a href="https://www.notion.so/BOB-e7675c673aef41008f62697fe3dd6204?pvs=21" target="_blank">BoB 활동 기록</a></li>
+                    <li><a href="https://www.notion.so/4-fb34921019d948edbe15af38337bbc47?pvs=21" target="_blank">보안 컨설팅 4조</a></li>
+                    <li><a href="https://www.notion.so/e3be71d67fe5424da9d615192d3660ad?pvs=21" target="_blank">보안 컨설팅 산출물 템플릿</a></li>
+                </ul>
+            </div>
+
+            <!-- 4. 핵심 역량/관심사 -->
+            <div class="archive-category">
+                <h4>핵심 역량 <span>Core Insights</span></h4>
+                <ul class="archive-list">
+                    <li><a href="https://www.notion.so/1c17953a1f4243848dbb267afa0b1a2c?pvs=21" target="_blank">팔만코딩경 (개발 지식)</a></li>
+                    <li><a href="https://www.notion.so/chapter-cs-c39a18a061be49368ced485ea8ab6acc?pvs=21" target="_blank">CS 기초</a></li>
+                    <li><a href="https://www.notion.so/4d4893e5ee044a33817cee7ed268e65c?pvs=21" target="_blank">데이터 분석 독학</a></li>
+                    <li><a href="https://www.notion.so/1e03ce837f3c80699140c1e65a87ab61?pvs=21" target="_blank">보안담당자용 정보</a></li>
+                    <li><a href="https://www.notion.so/70064c0f0ded4054b3ab58c164d7dc00?pvs=21" target="_blank">클라우드 보안 아키텍처</a></li>
+                </ul>
+            </div>
+
+            <!-- 5. AWS KRUG -->
+            <div class="archive-category">
+                <h4>AWS KRUG <span>Community</span></h4>
+                <ul class="archive-list">
+                    <li><a href="https://www.notion.so/AWS-KRUG-DevOps-20240404-65d2ea606e8a4192be6624ec1a19d9bb?pvs=21" target="_blank">DevOps - 20240404</a></li>
+                    <li><a href="https://www.notion.so/AWS-KRUG-Platform-Engineering-20240409-f144408433934c8d8f08e8def4b4d469?pvs=21" target="_blank">Platform Engineering</a></li>
+                    <li><a href="https://www.notion.so/AWS-KRUG-AI-Engineering-20241217-15f3ce837f3c805890a2d8a8af5bffeb?pvs=21" target="_blank">AI Engineering</a></li>
+                    <li><a href="https://www.notion.so/HashiCorp-Terraform-Associate-Study-73255bf6de7c4ba4b6893cd95f848271?pvs=21" target="_blank">Terraform Study</a></li>
+                </ul>
+            </div>
+
+            <!-- 6. 학교생활 -->
+            <div class="archive-category">
+                <h4>학교생활 <span>Academic</span></h4>
+                <ul class="archive-list">
+                    <li><a href="https://www.notion.so/e17abb137ae6407b9941215b311c5eab?pvs=21" target="_blank">학점 취득 계획</a></li>
+                    <li><a href="https://www.notion.so/f747ca07097044b39ff415c1cde34d23?pvs=21" target="_blank">수강한 강의 목록</a></li>
+                    <li><a href="https://www.notion.so/1856ec34be8f41a598badf3c7c283261?pvs=21" target="_blank">학점 계산기</a></li>
+                </ul>
+            </div>
+
+            <!-- 7. 교육 -->
+            <div class="archive-category">
+                <h4>교육 <span>Training</span></h4>
+                <ul class="archive-list">
+                    <li><a href="https://www.notion.so/kisia-59274a798c704f28b66ee95de474c2d7?pvs=21" target="_blank">KISIA 교육</a></li>
+                    <li><a href="https://www.notion.so/AHSS-abeedda6d0be4d419870123e1d5ebc51?pvs=21" target="_blank">AHSS 스터디</a></li>
+                    <li><a href="https://www.notion.so/AWS-Skill-Bulider-0fa0d2f17cc545ec908bcee7e844226f?pvs=21" target="_blank">AWS Skill Builder</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>
