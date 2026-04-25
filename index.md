@@ -235,6 +235,20 @@ title: "Home"
                 <a href="/projects/privacy-policy-guidelines-2025/" class="btn btn-small">View Details</a>
             </div>
         </div>
+        <div class="project-card">
+            <div class="project-info">
+                <h3>Integrated Privacy Processing Handbook</h3>
+                <p>
+                    개정 개인정보 보호법(2025.07.29)의 전 프로세스(수집-이용-제공-파기)를 아우르는 실무 통합 가이드라인입니다.
+                </p>
+                <ul class="project-points">
+                    <li>필수 동의 관행의 고지 방식 전환 등 2025년 핵심 개정 사항 반영</li>
+                    <li>제15조부터 제27조까지의 조문별 실무 체크포인트 및 Q&A 정리</li>
+                    <li>주민등록번호 처리 제한, 업무 위탁 및 영업양도 시 유의사항 요약</li>
+                </ul>
+                <a href="/projects/integrated-privacy-processing-guide/" class="btn btn-small">View Details</a>
+            </div>
+        </div>
     </div>
 </section>
 
