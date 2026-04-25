@@ -389,6 +389,20 @@ title: "Home"
                 <a href="/projects/online-behavioral-privacy-guide/" class="btn btn-small">View Details</a>
             </div>
         </div>
+        <div class="project-card">
+            <div class="project-info">
+                <h3>CCTV Privacy Compliance Guide</h3>
+                <p>
+                    고정형 및 이동형 영상정보처리기기의 설치 기준, 개인영상정보의 안전성 확보 조치 및 제3자 제공 절차를 정리한 실무 지침서입니다.
+                </p>
+                <ul class="project-points">
+                    <li>공개/비공개 장소별 설치 원칙(최소 설치, 녹음 금지) 및 안내판 부착 기준 분석</li>
+                    <li>근로 공간 내 모니터링 목적 CCTV 설치 시 노사 협의 및 사생활 보호 조치 프로세스 정립</li>
+                    <li>영상정보 보관·파기 주기 관리 및 수사기관 영장에 따른 정보 제공 시 비식별 처리(모자이크) 기준 제시</li>
+                </ul>
+                <a href="/projects/cctv-privacy-compliance-guide/" class="btn btn-small">View Details</a>
+            </div>
+        </div>
     </div>
 </section>
 
