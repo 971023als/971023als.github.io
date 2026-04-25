@@ -109,6 +109,20 @@ title: "Home"
             </div>
         </div>
 
+        <div class="project-card">
+            <div class="project-info">
+                <h3>Location Law Compliance Guide</h3>
+                <p>
+                    위치정보법(위치정보의 보호 및 이용 등에 관한 법률)에 대한 심층 분석 및 비즈니스 컴플라이언스 가이드라인입니다.
+                </p>
+                <ul class="project-points">
+                    <li>개인위치정보 vs 사물위치정보 판단 기준 수립</li>
+                    <li>위치정보사업자/LBS사업자 등록 및 신고 가이드</li>
+                    <li>긴급구조 및 공익 목적의 위치정보 활용 체계 분석</li>
+                </ul>
+                <a href="/projects/location-info-protection-guide/" class="btn btn-small">View Details</a>
+            </div>
+        </div>
     </div>
 </section>
 
