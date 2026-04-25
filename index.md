@@ -151,6 +151,20 @@ title: "Home"
                 <a href="/projects/sms-retention-compliance/" class="btn btn-small">View Details</a>
             </div>
         </div>
+        <div class="project-card">
+            <div class="project-info">
+                <h3>Consent Reform Compliance Guide</h3>
+                <p>
+                    개정 개인정보 보호법에 따른 동의 체계 변화(필수동의에서 고지 후 처리로의 전환)와 실무 대응 기준을 정리한 가이드입니다.
+                </p>
+                <ul class="project-points">
+                    <li>계약 체결 및 이행을 위한 동의 없는 처리 기준 수립</li>
+                    <li>필수/선택 동의 항목 분리 및 UX 개선 방안 제시</li>
+                    <li>민감정보 및 고유식별정보의 예외적 필수동의 운영 가이드</li>
+                </ul>
+                <a href="/projects/privacy-consent-reform-guide/" class="btn btn-small">View Details</a>
+            </div>
+        </div>
     </div>
 </section>
 
