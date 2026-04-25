@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<article class="project-detail">
+    <header class="project-header">
+        <div class="project-meta">
+            <span class="category-badge">{{ page.category }}</span>
+            <time>{{ page.date | date: "%Y" }} Project</time>
+        </div>
+        <h1>{{ page.title }}</h1>
+        <p class="project-lead">{{ page.description }}</p>
+    </header>
+
+    {% if page.image %}
+    <div class="project-hero-img">
+        <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+    </div>
+    {% endif %}
+
+    <div class="project-content-grid">
+        <aside class="project-sidebar">
+            <div class="sidebar-block">
+                <h4>Tech Stack</h4>
+                <div class="skills-grid mini">
+                    {% for tech in page.tech %}
+                    <span class="skill-tag mini">{{ tech }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+            {% if page.github %}
+            <div class="sidebar-block">
+                <h4>Source Code</h4>
+                <a href="{{ page.github }}" class="btn btn-small" target="_blank">View on GitHub</a>
+            </div>
+            {% endif %}
+        </aside>
+
+        <div class="project-main-content">
+            {{ content }}
+        </div>
+    </div>
+
+    <footer class="project-footer">
+        <a href="/#projects" class="btn btn-muted">← Back to Projects</a>
+    </footer>
+</article>
