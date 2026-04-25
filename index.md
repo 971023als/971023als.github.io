@@ -459,6 +459,20 @@ title: "Home"
                 <a href="/projects/privacy-internal-audit-automation/" class="btn btn-small">View Details</a>
             </div>
         </div>
+        <div class="project-card">
+            <div class="project-info">
+                <h3>Privacy Outsourcing Governance Guide</h3>
+                <p>
+                    개인정보보호법 제26조에 따른 수탁사 관리·감독 의무를 이행하기 위한 위·수탁 계약 관리 및 제3자 제공 구분 실무 가이드입니다.
+                </p>
+                <ul class="project-points">
+                    <li>개인정보 처리 위탁과 제3자 제공의 법적 판단 기준 정립 및 이익 주체에 따른 책임 소재 분석</li>
+                    <li>수탁사 보안 역량 사전 평가(Assessment), 계약서 작성, 정기 점검, 종료 시 파기 확인으로 이어지는 생애주기 관리</li>
+                    <li>2025년 7월 통합 안내서의 최신 지침을 반영한 위탁 관리 감독 프로세스 고도화 및 표준 계약서 양식 체계화</li>
+                </ul>
+                <a href="/projects/privacy-outsourcing-governance-guide/" class="btn btn-small">View Details</a>
+            </div>
+        </div>
     </div>
 </section>
 
