@@ -571,6 +571,20 @@ title: "Home"
                 <a href="/projects/isms-p-policy-governance-guide/" class="btn btn-small">View Details</a>
             </div>
         </div>
+        <div class="project-card">
+            <div class="project-info">
+                <h3>ISMS-P Resource Allocation Governance</h3>
+                <p>
+                    ISMS-P 인증 기준 1.1.6에 따라 분야별 보안 전문 인력을 확보하고 연간 정보보호 예산 및 자원 할당 체계를 구축한 리소스 거버넌스 프로젝트입니다.
+                </p>
+                <ul class="project-points">
+                    <li>자격증(ISMS-P, CISSP 등) 및 실무 경력을 보유한 전문 인력 확보와 연간 보안 교육 로드맵 수립을 통한 조직 전문성 강화</li>
+                    <li>기술적·관리적 보호조치 이행을 위한 연도별 보안 투자 계획(Budgeting) 수립 및 최고경영자 승인 프로세스 정립</li>
+                    <li>연간 세부추진 계획에 따른 수행 결과를 심사 분석하여 경영진에게 보고하고 차년도 계획에 환류(Feedback)하는 성과 관리 체계 구축</li>
+                </ul>
+                <a href="/projects/isms-p-resource-allocation-governance/" class="btn btn-small">View Details</a>
+            </div>
+        </div>
     </div>
 </section>
 
