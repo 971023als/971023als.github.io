@@ -361,6 +361,20 @@ title: "Home"
                 <a href="/projects/privacy-guidelines-archive/" class="btn btn-small">View Details</a>
             </div>
         </div>
+        <div class="project-card">
+            <div class="project-info">
+                <h3>HR & Labor Privacy Compliance Guide</h3>
+                <p>
+                    근로기준법, 채용절차법 및 개인정보 보호법을 연계하여 채용부터 퇴직까지의 인사·노무 프로세스 전반에 걸친 개인정보 처리 기준을 정리한 지침서입니다.
+                </p>
+                <ul class="project-points">
+                    <li>채용 전형별 최소 수집 원칙 및 채용절차법상 수집 금지 항목(신체 조건, 가족 정보 등) 분석</li>
+                    <li>임금대장, 4대 보험, 연말정산 등 법령 근거에 따른 정보 보유 기간 및 주민번호 처리 기준 정립</li>
+                    <li>퇴직 근로자의 경력증명 목적 보관(3년) 및 세무 증빙(5년) 등 단계별 파기·분리보관 전략</li>
+                </ul>
+                <a href="/projects/hr-privacy-compliance-guide/" class="btn btn-small">View Details</a>
+            </div>
+        </div>
     </div>
 </section>
 
