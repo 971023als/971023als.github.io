@@ -4,7 +4,7 @@
 # Site settings
 title: "이민형 | Portfolio"
 email: "971023als@gmail.com"
-description: "사용자 중심의 웹 환경을 설계하고 AI 기술을 탐구하는 개발자 이민형의 포트폴리오입니다."
+description: "개인정보보호, 클라우드 보안, ISMS-P, AI 기반 보안 자동화 프로젝트를 정리한 이민형의 보안 포트폴리오입니다."
 baseurl: "" # 루트 디렉터리 사용
 url: "https://971023als.github.io" # 실제 배포 URL로 업데이트
 
