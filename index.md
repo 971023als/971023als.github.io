@@ -193,6 +193,20 @@ title: "Home"
                 <a href="/projects/statutory-obligation-privacy-guide/" class="btn btn-small">View Details</a>
             </div>
         </div>
+        <div class="project-card">
+            <div class="project-info">
+                <h3>Purpose-extrinsic Use Exceptions</h3>
+                <p>
+                    개인정보 보호법 제18조 제2항에 따른 목적 외 이용 및 제3자 제공이 가능한 예외 사유와 실무 적용 지침입니다.
+                </p>
+                <ul class="project-points">
+                    <li>별도 동의, 특별 규정, 급박한 생명 보호 등 9대 예외 사유 분석</li>
+                    <li>공공기관 전용 예외 조항(수사, 재판 등) 및 민간 적용 한계 검토</li>
+                    <li>최신 개보위 심의례 기반의 재난·감염병 대응 정보 제공 기준 정립</li>
+                </ul>
+                <a href="/projects/purpose-extrinsic-exceptions-guide/" class="btn btn-small">View Details</a>
+            </div>
+        </div>
     </div>
 </section>
 
