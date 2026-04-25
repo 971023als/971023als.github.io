@@ -487,6 +487,20 @@ title: "Home"
                 <a href="/projects/privacy-lifecycle-governance-guide/" class="btn btn-small">View Details</a>
             </div>
         </div>
+        <div class="project-card">
+            <div class="project-info">
+                <h3>ISMS-P Certification Management</h3>
+                <p>
+                    쿠폰 서비스 운영 환경을 대상으로 ISMS-P 인증 기준에 따른 조직적 R&R 수립 및 증적 자료를 체계화한 통합 관리 데이터베이스입니다.
+                </p>
+                <ul class="project-points">
+                    <li>102개 인증 항목별 정보보안·개발·인사·영업 부서의 세부 역할 정의 및 상시 보안 수준 점검 체계 구축</li>
+                    <li>ISMS-P 성숙도 모델(Maturity Model) 분석을 통한 보안 취약 구간 식별 및 연간 개선 로드맵 수립</li>
+                    <li>2025년 최신 ISMS-P 운영 가이드 개정판을 반영한 증적 관리 자동화 및 심사 대응 지식 베이스 구축</li>
+                </ul>
+                <a href="/projects/isms-p-certification-management/" class="btn btn-small">View Details</a>
+            </div>
+        </div>
     </div>
 </section>
 
