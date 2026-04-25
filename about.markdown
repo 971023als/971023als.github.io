@@ -4,39 +4,39 @@ title: "About"
 permalink: /about/
 ---
 
-<div style="max-width: 800px; margin: 0 auto; padding: 2rem 0;">
-    <h1 style="font-size: 2.5rem; margin-bottom: 1.5rem;">안녕하세요, 이민형입니다.</h1>
+<div class="about-container">
+    <h1 class="about-title">안녕하세요, 보안 실무자 이민형입니다.</h1>
     
-    <p style="font-size: 1.2rem; color: var(--text-muted); margin-bottom: 2rem;">
-        기술과 창의성을 결합하여 가치를 만드는 개발자입니다. 사용자 중심의 인터페이스를 설계하고, 
-        복잡한 문제를 효율적인 코드로 해결하는 과정에서 즐거움을 느낍니다.
+    <p class="about-intro">
+        개인정보보호와 클라우드 보안 업무를 기반으로, 보안 점검·증적 관리·컴플라이언스 분석을 자동화하는 연구를 수행하고 있습니다. 
+        복잡한 보안 규제와 기술적 간극을 효율적인 자동화 도구로 해결하는 과정에서 가치를 창출합니다.
     </p>
 
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 3rem;">
-        <div>
-            <h3 style="color: var(--primary-color);">My Focus</h3>
-            <ul style="padding-left: 1.2rem;">
-                <li><strong>Web Development</strong>: React, Node.js 기반의 현대적인 웹 서비스 구축</li>
-                <li><strong>AI Integration</strong>: LLM과 생성형 AI를 활용한 생산성 도구 연구</li>
-                <li><strong>UI/UX Design</strong>: 깔끔하고 직관적인 사용자 경험 설계</li>
+    <div class="about-grid">
+        <div class="about-section">
+            <h3>Core Expertise</h3>
+            <ul class="about-list">
+                <li><strong>Information Security</strong>: 개인정보보호 및 클라우드 보안 아키텍처 설계</li>
+                <li><strong>Security Automation</strong>: AI/LLM 기반의 보안 점검 및 증적 관리 자동화</li>
+                <li><strong>Compliance</strong>: ISMS-P 및 국제 보안 표준(ISO) 대응 연구</li>
             </ul>
         </div>
-        <div>
-            <h3 style="color: var(--primary-color);">Experience</h3>
-            <ul style="padding-left: 1.2rem;">
-                <li>GitHub Pages & Jekyll 기반 기술 블로그 운영</li>
-                <li>AI 어시스턴트를 활용한 효율적인 개발 프로세스 구축</li>
-                <li>다양한 오픈소스 프로젝트 참여 및 탐구</li>
+        <div class="about-section">
+            <h3>Technical Background</h3>
+            <ul class="about-list">
+                <li>Python & Flask 기반 보안 점검 도구 개발</li>
+                <li>AWS 인프라 보안 설정 및 취약점 분석</li>
+                <li>GitHub Actions를 활용한 보안 CI/CD 파이프라인 구축</li>
             </ul>
         </div>
     </div>
 
-    <div style="margin-top: 4rem; padding: 2rem; background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 1rem; text-align: center;">
-        <h3>Let's Work Together!</h3>
-        <p>새로운 기술적 도전과 협업 제안은 언제나 환영합니다.</p>
-        <div style="margin-top: 1.5rem;">
+    <div class="about-cta">
+        <h3>Let's Secure the Future Together!</h3>
+        <p>새로운 보안 기술적 도전과 협업 제안은 언제나 환영합니다.</p>
+        <div class="about-cta-btns">
             <a href="mailto:971023als@gmail.com" class="btn">Send Email</a>
-            <a href="https://github.com/971023als" target="_blank" class="btn" style="background: var(--header-bg); margin-left: 0.5rem;">GitHub Profile</a>
+            <a href="https://github.com/971023als" target="_blank" class="btn btn-muted">GitHub Profile</a>
         </div>
     </div>
 </div>

@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="사용자 중심의 웹 환경을 설계하고 AI 기술을 탐구하는 개발자 이민형의 포트폴리오입니다.">
+    <meta name="description" content="개인정보보호, 클라우드 보안, ISMS-P, AI 기반 보안 자동화 프로젝트를 정리한 이민형의 보안 포트폴리오입니다.">
     <title>Home | 이민형 | Portfolio</title>
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <header>
-        <div class="header-container" style="max-width: 1000px; margin: 0 auto; padding: 0 1.5rem; display: flex; justify-content: space-between; align-items: center;">
-            <a href="/" style="color: #fff; font-size: 1.5rem; font-weight: 800; text-decoration: none;">이민형 | Portfolio</a>
+        <div class="header-container">
+            <a href="/" class="header-logo">이민형 | Portfolio</a>
             <nav>
                 <ul>
                     <li><a href="/" class="active">Home</a></li>
@@ -23,42 +23,79 @@
     <main>
         <div class="hero">
     <h1>이민형</h1>
-    <p>사용자 중심의 웹 환경을 설계하고 AI 기술을 탐구하는 개발자입니다.</p>
+    <p>
+        개인정보보호, 클라우드 보안, AI 기반 보안 자동화를 연구하고 구현하는 보안 실무자입니다.
+    </p>
     <div class="hero-btns">
         <a href="#projects" class="btn">View Projects</a>
-        <a href="/about" class="btn" style="background: transparent; color: var(--primary-color); border: 1px solid var(--primary-color);">About Me</a>
+        <a href="/about/" class="btn btn-outline">About Me</a>
     </div>
 </div>
 
 <section id="skills">
     <h2>Skills &amp; Technologies</h2>
     <div class="skills-grid">
-        <div class="skill-tag">JavaScript</div>
-        <div class="skill-tag">React</div>
         <div class="skill-tag">Python</div>
-        <div class="skill-tag">Node.js</div>
-        <div class="skill-tag">Git / GitHub</div>
+        <div class="skill-tag">Flask</div>
+        <div class="skill-tag">JavaScript</div>
+        <div class="skill-tag">AWS Security</div>
+        <div class="skill-tag">ISMS-P</div>
+        <div class="skill-tag">Privacy Compliance</div>
+        <div class="skill-tag">Security Automation</div>
         <div class="skill-tag">AI / LLM</div>
+        <div class="skill-tag">Git / GitHub</div>
     </div>
 </section>
 
 <section id="projects">
     <h2>Featured Projects</h2>
     <div class="projects-grid">
+
         <div class="project-card">
             <div class="project-info">
-                <h3>Portfolio Website</h3>
-                <p>Jekyll과 GitHub Pages를 활용한 개인 브랜딩 포트폴리오 구축.</p>
-                <a href="#" class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;">View Details</a>
+                <h3>Personal Data Flow Mapper</h3>
+                <p>
+                    서비스, DB, API, 수탁사, 외부 제공처 정보를 기반으로 개인정보 처리 흐름도와 위험 노드를 자동 생성하는 도구입니다.
+                </p>
+                <ul class="project-points">
+                    <li>개인정보 수집·저장·이용·제공 흐름 구조화</li>
+                    <li>Mermaid 기반 데이터 흐름도 자동 생성</li>
+                    <li>국외이전, 수탁사, 외부제공 위험 노드 표시</li>
+                </ul>
+                <a href="/projects/personal-data-flow-mapper/" class="btn btn-small">View Details</a>
             </div>
         </div>
+
         <div class="project-card">
             <div class="project-info">
-                <h3>AI Blogging Assistant</h3>
-                <p>AI를 활용하여 콘텐츠 생성을 자동화하는 워크플로우 연구.</p>
-                <a href="#" class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;">View Details</a>
+                <h3>AWS Privacy Security Baseline Scanner</h3>
+                <p>
+                    AWS 환경에서 개인정보 처리 시스템의 기본 보안 설정을 자동 점검하고 ISMS-P, ISO 통제항목과 연결하는 보안 점검 도구입니다.
+                </p>
+                <ul class="project-points">
+                    <li>S3 Public Access, 암호화, CloudTrail 점검</li>
+                    <li>IAM 과다권한 및 MFA 적용 여부 확인</li>
+                    <li>점검 결과 JSON 및 HTML 리포트 생성</li>
+                </ul>
+                <a href="/projects/aws-privacy-security-baseline-scanner/" class="btn btn-small">View Details</a>
             </div>
         </div>
+
+        <div class="project-card">
+            <div class="project-info">
+                <h3>FinOSS Risk Checker</h3>
+                <p>
+                    외주개발 산출물의 오픈소스 라이선스와 취약점을 함께 분석하여 전자금융 납품검수 리스크를 점검하는 도구입니다.
+                </p>
+                <ul class="project-points">
+                    <li>package-lock.json, requirements.txt, pom.xml 분석</li>
+                    <li>CVE, 라이선스, 고위험 오픈소스 식별</li>
+                    <li>전자금융 업무 영향도 기반 우선순위 산정</li>
+                </ul>
+                <a href="/projects/finoss-risk-checker/" class="btn btn-small">View Details</a>
+            </div>
+        </div>
+
     </div>
 </section>
 
@@ -76,16 +113,16 @@
         
     </ul>
     <div style="text-align: center; margin-top: 2rem;">
-        <a href="/blog" class="btn" style="background: var(--text-muted);">See All Posts</a>
+        <a href="/blog/" class="btn btn-muted">See All Posts</a>
     </div>
 </section>
 
     </main>
 
     <footer>
-        <div class="footer-container" style="max-width: 1000px; margin: 0 auto; padding: 0 1.5rem;">
+        <div class="footer-container">
             <p>&copy; 2026 이민형. All rights reserved.</p>
-            <div class="social-links" style="margin-top: 1rem;">
+            <div class="social-links">
                 <a href="https://github.com/971023als" target="_blank">GitHub</a>
                 <a href="mailto:971023als@gmail.com">Email</a>
             </div>
