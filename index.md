@@ -333,6 +333,34 @@ title: "Home"
                 <a href="/projects/privacy-training-curriculum-guide/" class="btn btn-small">View Details</a>
             </div>
         </div>
+        <div class="project-card">
+            <div class="project-info">
+                <h3>Mobile App Access Permissions Guide</h3>
+                <p>
+                    정보통신망법 및 OS(Android, iOS) 정책에 따른 앱 접근권한 고지 기준과 컴플라이언스 점검 항목을 정리한 실무 가이드입니다.
+                </p>
+                <ul class="project-points">
+                    <li>필수/선택 권한 구분 및 구체적 접근 목적 고지 문구 설계 기준 제시</li>
+                    <li>Android 런타임 권한 및 iOS ATT(App Tracking Transparency) 정책 대응</li>
+                    <li>권한 거부 시 서비스 제한 금지 등 법적 리스크 관리 및 체크리스트 제공</li>
+                </ul>
+                <a href="/projects/mobile-app-access-permissions-guide/" class="btn btn-small">View Details</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-info">
+                <h3>Privacy Guidelines Archive</h3>
+                <p>
+                    2014년부터 2025년까지 발행된 개인정보보호위원회 및 KISA의 주요 가이드라인, 해설서, 기술 지침을 체계적으로 정리한 통합 라이브러리입니다.
+                </p>
+                <ul class="project-points">
+                    <li>AI, 합성데이터, 마이데이터 등 신기술 분야의 최신 가이드라인 연도별 분류</li>
+                    <li>암호화, 노출방지, 유출대응 등 실무에 필수적인 기술 안내서 아카이빙</li>
+                    <li>인사노무, 온라인 서비스 등 분야별 표준 해석 및 지침 데이터베이스 구축</li>
+                </ul>
+                <a href="/projects/privacy-guidelines-archive/" class="btn btn-small">View Details</a>
+            </div>
+        </div>
     </div>
 </section>
 
