@@ -501,6 +501,20 @@ title: "Home"
                 <a href="/projects/isms-p-certification-management/" class="btn btn-small">View Details</a>
             </div>
         </div>
+        <div class="project-card">
+            <div class="project-info">
+                <h3>ISMS-P Management Commitment Governance</h3>
+                <p>
+                    ISMS-P 인증의 첫 번째 항목인 경영진의 참여를 보장하기 위한 보고 및 의사결정 체계 수립과 실무 이행 증적 관리 프로젝트입니다.
+                </p>
+                <ul class="project-points">
+                    <li>2025년도 정보보호 관리규정 및 지침 개정에 대한 최고경영자 전자결재 승인 프로세스 수립 및 이행</li>
+                    <li>정보보호위원회 운영 및 위험평가 보고 등 경영진의 실질적인 보안 의사결정 참여를 위한 거버넌스 아키텍처 설계</li>
+                    <li>심사 결함 사례 분석을 통한 정기/비정기 보고 체계의 완결성 확보 및 책임 추적성(Traceability) 강화</li>
+                </ul>
+                <a href="/projects/isms-p-management-commitment-governance/" class="btn btn-small">View Details</a>
+            </div>
+        </div>
     </div>
 </section>
 
