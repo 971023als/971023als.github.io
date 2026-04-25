@@ -263,6 +263,20 @@ title: "Home"
                 <a href="/projects/pisfair-2025-security-trends/" class="btn btn-small">View Details</a>
             </div>
         </div>
+        <div class="project-card">
+            <div class="project-info">
+                <h3>PISFAIR 2025 Technical Deep Dive</h3>
+                <p>
+                    AI 보안 프레임워크(LINNDUN, OWASP), 차세대 인증 표준(X.1280) 및 비정형 데이터 가명처리 실무를 분석한 기술 심층 리포트입니다.
+                </p>
+                <ul class="project-points">
+                    <li>AI 서비스 보호를 위한 LINNDUN 모델 및 OWASP LLM Top 10 전략</li>
+                    <li>비정형 데이터(CT, 영상, 음성) 가명처리 및 위험성 검토 사례 분석</li>
+                    <li>MCP(Model Context Protocol) 기반 업무 환경의 보안 위협 및 대응 로드맵</li>
+                </ul>
+                <a href="/projects/pisfair-2025-technical-deepdive/" class="btn btn-small">View Details</a>
+            </div>
+        </div>
     </div>
 </section>
 
