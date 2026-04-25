@@ -73,9 +73,12 @@ tech: ["Compliance", "ISMS-P", "Risk Management", "Archive"]
 *   **보호조치 기준**: [안전성 확보조치 기준 및 가이드라인](https://www.notion.so/2ef3ce837f3c81ca9ef6f0c1a5ff5877?pvs=21), [업무 수행 가이드 DB](https://www.notion.so/2ef3ce837f3c81e0b6a6d2da1eee1535?pvs=21)
 *   **기록 검토**: [접속 및 작업기록 검토 아카이브](https://www.notion.so/2ef3ce837f3c8124922ed1552faaceab?pvs=21)
 
-### ■ 외부 기관 및 글로벌 참고자료
-*   **규제 기관**: [KISA/개보위 자료 요약본](https://www.notion.so/2ef3ce837f3c819689ace30caecd2935?pvs=21), [최신 법령 해석 문서](https://www.notion.so/2ef3ce837f3c81fbb1ebdc0acd0be18a?pvs=21)
-*   **글로벌/트렌드**: [글로벌 규제준수 요건 아카이브](https://www.notion.so/2ef3ce837f3c8152b1aeeaf73bca64b0?pvs=21), [내부통제 방안 아카이브](https://www.notion.so/2ef3ce837f3c814d9fd4db9d6d9a16b6?pvs=21)
+### ■ 법령 해석 및 정책 참고자료
+*   **법령 해석 정리**: [법령 해석 요약 및 정리](https://www.notion.so/2ef3ce837f3c812ba4bffc1a1dca227d?pvs=21), [개인정보보호 관련 법령 해석](https://www.notion.so/2ef3ce837f3c81fbb1ebdc0acd0be18a?pvs=21)
+*   **위험도 분석**: [위반 사례 기반 위험도 매칭](https://www.notion.so/2ef3ce837f3c817d8194f32f6917eb72?pvs=21)
+*   **서비스 연동**: [쿠폰서비스 계약 현황](https://www.notion.so/1c22313394528039af59f0820e83c381?pvs=21), [개인정보 흐름도 (현행화)](https://www.notion.so/1cd897735ccb45cc914f853d95d57682?pvs=21), [최신 증적자료 모음](https://www.notion.so/43d118f4f6a74a9eb65b6bdb5bd4a76e?pvs=21)
+*   **기관 자료**: [KISA/개보위 주요 공고 및 가이드 요약](https://www.notion.so/2ef3ce837f3c819689ace30caecd2935?pvs=21)
+*   **글로벌 트렌드**: [글로벌 규제준수 요건 아카이브](https://www.notion.so/2ef3ce837f3c8152b1aeeaf73bca64b0?pvs=21), [내부통제 방안 아카이브](https://www.notion.so/2ef3ce837f3c814d9fd4db9d6d9a16b6?pvs=21)
 
 ---
 <div style="text-align: center; color: var(--text-muted); font-size: 0.9rem;">
