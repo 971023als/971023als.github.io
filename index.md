@@ -79,6 +79,21 @@ title: "Home"
             </div>
         </div>
 
+        <div class="project-card">
+            <div class="project-info">
+                <h3>HMH: SiMD Healthcare Security</h3>
+                <p>
+                    의료기기(SiMD) 및 헬스케어 앱의 보안 컴플라이언스 진단 가이드라인을 개발하고 취약점을 분석한 BoB 컨설팅 프로젝트입니다.
+                </p>
+                <ul class="project-points">
+                    <li>SiMD 진단 체크리스트 및 가이드라인 수립</li>
+                    <li>의료 데이터 개인정보보호 및 취약점 진단</li>
+                    <li>국내외 보안 인증 표준 기반 리스크 분석</li>
+                </ul>
+                <a href="/projects/hmh/" class="btn btn-small">View Details</a>
+            </div>
+        </div>
+
     </div>
 </section>
 
