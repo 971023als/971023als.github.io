@@ -6,7 +6,6 @@ layout: default
     <header class="project-header">
         <div class="project-meta">
             <span class="category-badge">{{ page.category }}</span>
-            <time>{{ page.date | date: "%Y" }} Project</time>
         </div>
         <h1>{{ page.title }}</h1>
         <p class="project-lead">{{ page.description }}</p>
@@ -21,6 +20,12 @@ layout: default
     <div class="project-content-grid">
         <aside class="project-sidebar">
             <div class="sidebar-block">
+                <h4>Project Info</h4>
+                <p style="font-size: 0.9rem; margin-bottom: 0.5rem;"><strong>Date:</strong> {{ page.date | date: "%Y. %m" }}</p>
+                <p style="font-size: 0.9rem;"><strong>Category:</strong> {{ page.category }}</p>
+            </div>
+
+            <div class="sidebar-block">
                 <h4>Tech Stack</h4>
                 <div class="skills-grid mini">
                     {% for tech in page.tech %}
@@ -28,10 +33,11 @@ layout: default
                     {% endfor %}
                 </div>
             </div>
+
             {% if page.github %}
             <div class="sidebar-block">
                 <h4>Source Code</h4>
-                <a href="{{ page.github }}" class="btn btn-small" target="_blank">View on GitHub</a>
+                <a href="{{ page.github }}" class="btn btn-small" style="width: 100%; text-align: center;" target="_blank">View on GitHub</a>
             </div>
             {% endif %}
         </aside>

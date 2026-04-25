@@ -32,575 +32,288 @@ title: "Home"
 
 <section id="projects">
     <h2>Featured Projects</h2>
-    <div class="projects-grid">
 
-        <div class="project-card">
-            <div class="project-info">
-                <h3>Personal Data Flow Mapper</h3>
-                <p>
-                    서비스, DB, API, 수탁사, 외부 제공처 정보를 기반으로 개인정보 처리 흐름도와 위험 노드를 자동 생성하는 도구입니다.
-                </p>
-                <ul class="project-points">
-                    <li>개인정보 수집·저장·이용·제공 흐름 구조화</li>
-                    <li>Mermaid 기반 데이터 흐름도 자동 생성</li>
-                    <li>국외이전, 수탁사, 외부제공 위험 노드 표시</li>
-                </ul>
-                <a href="/projects/personal-data-flow-mapper/" class="btn btn-small">View Details</a>
-            </div>
-        </div>
+    <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">전체 보기</button>
+        <button class="filter-btn" data-filter="automation">🛠️ Automation & Tools</button>
+        <button class="filter-btn" data-filter="compliance">⚖️ Compliance & SOPs</button>
+        <button class="filter-btn" data-filter="isms">🛡️ ISMS-P Certification</button>
+        <button class="filter-btn" data-filter="research">🔍 Security Research</button>
+    </div>
 
-        <div class="project-card">
-            <div class="project-info">
-                <h3>AWS Privacy Security Baseline Scanner</h3>
-                <p>
-                    AWS 환경에서 개인정보 처리 시스템의 기본 보안 설정을 자동 점검하고 ISMS-P, ISO 통제항목과 연결하는 보안 점검 도구입니다.
-                </p>
-                <ul class="project-points">
-                    <li>S3 Public Access, 암호화, CloudTrail 점검</li>
-                    <li>IAM 과다권한 및 MFA 적용 여부 확인</li>
-                    <li>점검 결과 JSON 및 HTML 리포트 생성</li>
-                </ul>
-                <a href="/projects/aws-privacy-security-baseline-scanner/" class="btn btn-small">View Details</a>
+    <!-- 1. Automation & Tools -->
+    <div class="project-category-section" data-category="automation">
+        <h3>Security Automation & Tools</h3>
+        <div class="projects-grid">
+            <div class="project-card" data-category="automation">
+                <span class="card-badge badge-automation">Tool</span>
+                <div class="project-info">
+                    <h3>Personal Data Flow Mapper</h3>
+                    <p>서비스, DB, API 정보를 기반으로 개인정보 처리 흐름도와 위험 노드를 자동 생성하는 도구입니다.</p>
+                    <ul class="project-points">
+                        <li>Mermaid 기반 데이터 흐름도 자동 생성</li>
+                        <li>국외이전, 수탁사, 외부제공 위험 노드 표시</li>
+                    </ul>
+                    <a href="/projects/personal-data-flow-mapper/" class="btn btn-small">View Details</a>
+                </div>
+            </div>
+            <div class="project-card" data-category="automation">
+                <span class="card-badge badge-automation">Tool</span>
+                <div class="project-info">
+                    <h3>AWS Privacy Baseline Scanner</h3>
+                    <p>AWS 환경에서 개인정보 처리 시스템의 기본 보안 설정을 자동 점검하는 도구입니다.</p>
+                    <ul class="project-points">
+                        <li>S3 Public Access, 암호화, CloudTrail 점검</li>
+                        <li>IAM 과다권한 및 MFA 적용 여부 확인</li>
+                    </ul>
+                    <a href="/projects/aws-privacy-security-baseline-scanner/" class="btn btn-small">View Details</a>
+                </div>
+            </div>
+            <div class="project-card" data-category="automation">
+                <span class="card-badge badge-automation">Tool</span>
+                <div class="project-info">
+                    <h3>FinOSS Risk Checker</h3>
+                    <p>오픈소스 라이선스와 취약점을 분석하여 전자금융 납품검수 리스크를 점검하는 도구입니다.</p>
+                    <ul class="project-points">
+                        <li>package-lock.json, requirements.txt 등 분석</li>
+                        <li>CVE, 라이선스, 고위험 오픈소스 식별</li>
+                    </ul>
+                    <a href="/projects/finoss-risk-checker/" class="btn btn-small">View Details</a>
+                </div>
+            </div>
+            <div class="project-card" data-category="automation">
+                <span class="card-badge badge-automation">Tool</span>
+                <div class="project-info">
+                    <h3>Privacy Internal Audit Automation</h3>
+                    <p>내부관리계획 이행점검을 Excel 기반으로 자동화하고 준거성을 관리하는 시스템입니다.</p>
+                    <ul class="project-points">
+                        <li>연간 이행점검 이력 관리 및 대시보드 시각화</li>
+                        <li>자동화 수식을 통한 입력 오류 방지 및 시간 단축</li>
+                    </ul>
+                    <a href="/projects/privacy-internal-audit-automation/" class="btn btn-small">View Details</a>
+                </div>
             </div>
         </div>
+    </div>
 
-        <div class="project-card">
-            <div class="project-info">
-                <h3>FinOSS Risk Checker</h3>
-                <p>
-                    외주개발 산출물의 오픈소스 라이선스와 취약점을 함께 분석하여 전자금융 납품검수 리스크를 점검하는 도구입니다.
-                </p>
-                <ul class="project-points">
-                    <li>package-lock.json, requirements.txt, pom.xml 분석</li>
-                    <li>CVE, 라이선스, 고위험 오픈소스 식별</li>
-                    <li>전자금융 업무 영향도 기반 우선순위 산정</li>
-                </ul>
-                <a href="/projects/finoss-risk-checker/" class="btn btn-small">View Details</a>
+    <!-- 2. Compliance & SOPs -->
+    <div class="project-category-section" data-category="compliance">
+        <h3>Privacy Compliance & SOPs</h3>
+        <div class="projects-grid">
+            <div class="project-card" data-category="compliance">
+                <span class="card-badge badge-compliance">SOP</span>
+                <div class="project-info">
+                    <h3>Privacy Management Archive</h3>
+                    <p>개인정보 보호 가이드, 증적 관리 기록을 체계화한 업무 아카이브입니다.</p>
+                    <ul class="project-points">
+                        <li>개인정보 생명주기 및 흐름도 아카이빙</li>
+                        <li>글로벌 규제 대응 및 최신 법령 해석 DB</li>
+                    </ul>
+                    <a href="/projects/privacy-management-archive/" class="btn btn-small">View Details</a>
+                </div>
+            </div>
+            <div class="project-card" data-category="compliance">
+                <span class="card-badge badge-compliance">SOP</span>
+                <div class="project-info">
+                    <h3>Privacy Ops Guide Database</h3>
+                    <p>ISMS-P 인증 심사 및 상시 점검에 대응하기 위한 핵심 운영 업무 SOP 데이터베이스입니다.</p>
+                    <ul class="project-points">
+                        <li>접속기록 검토, 파기 보고 등 필수 점검 항목 가이드</li>
+                        <li>체크리스트 및 보고서 템플릿 연계 지식 베이스</li>
+                    </ul>
+                    <a href="/projects/privacy-ops-guide-database/" class="btn btn-small">View Details</a>
+                </div>
+            </div>
+            <div class="project-card" data-category="compliance">
+                <span class="card-badge badge-compliance">Guide</span>
+                <div class="project-info">
+                    <h3>Integrated Privacy Handbook</h3>
+                    <p>개정 개인정보 보호법(2025.07)의 전 프로세스를 아우르는 실무 통합 가이드라인입니다.</p>
+                    <ul class="project-points">
+                        <li>2025년 핵심 개정 사항 반영 (고지 방식 전환 등)</li>
+                        <li>조문별 실무 체크포인트 및 Q&A 정리</li>
+                    </ul>
+                    <a href="/projects/integrated-privacy-processing-guide/" class="btn btn-small">View Details</a>
+                </div>
+            </div>
+            <div class="project-card" data-category="compliance">
+                <span class="card-badge badge-compliance">Guide</span>
+                <div class="project-info">
+                    <h3>Privacy Outsourcing Governance</h3>
+                    <p>수탁사 관리·감독 의무 이행을 위한 위·수탁 계약 관리 실무 가이드입니다. </p>
+                    <ul class="project-points">
+                        <li>수탁사 보안 역량 평가 및 계약 관리 생애주기</li>
+                        <li>2025년 통합 안내서 최신 지침 반영</li>
+                    </ul>
+                    <a href="/projects/privacy-outsourcing-governance-guide/" class="btn btn-small">View Details</a>
+                </div>
+            </div>
+            <div class="project-card" data-category="compliance">
+                <span class="card-badge badge-compliance">Guide</span>
+                <div class="project-info">
+                    <h3>Privacy Lifecycle Governance</h3>
+                    <p>수집부터 파기까지 전 과정을 정의한 단계별 법적 준수 가이드입니다.</p>
+                    <ul class="project-points">
+                        <li>2025년 4월 최신 처리방침 지침 반영</li>
+                        <li>데이터 흐름별 핵심 보안 요구사항 정립</li>
+                    </ul>
+                    <a href="/projects/privacy-lifecycle-governance-guide/" class="btn btn-small">View Details</a>
+                </div>
             </div>
         </div>
+    </div>
 
-        <div class="project-card">
-            <div class="project-info">
-                <h3>HMH: SiMD Healthcare Security</h3>
-                <p>
-                    의료기기(SiMD) 및 헬스케어 앱의 보안 컴플라이언스 진단 가이드라인을 개발하고 취약점을 분석한 BoB 컨설팅 프로젝트입니다.
-                </p>
-                <ul class="project-points">
-                    <li>SiMD 진단 체크리스트 및 가이드라인 수립</li>
-                    <li>의료 데이터 개인정보보호 및 취약점 진단</li>
-                    <li>국내외 보안 인증 표준 기반 리스크 분석</li>
-                </ul>
-                <a href="/projects/hmh/" class="btn btn-small">View Details</a>
+    <!-- 3. ISMS-P Governance & Certification -->
+    <div class="project-category-section" data-category="isms">
+        <h3>ISMS-P Governance & Certification</h3>
+        <div class="projects-grid">
+            <div class="project-card" data-category="isms">
+                <span class="card-badge badge-isms">ISMS-P</span>
+                <div class="project-info">
+                    <h3>ISMS-P Certification Management</h3>
+                    <p>ISMS-P 인증 기준에 따른 조직적 R&R 수립 및 증적 자료 관리 데이터베이스입니다.</p>
+                    <ul class="project-points">
+                        <li>102개 인증 항목별 부서 세부 역할 정의</li>
+                        <li>심사 대응 지식 베이스 및 증적 관리 자동화</li>
+                    </ul>
+                    <a href="/projects/isms-p-certification-management/" class="btn btn-small">View Details</a>
+                </div>
+            </div>
+            <div class="project-card" data-category="isms">
+                <span class="card-badge badge-isms">Governance</span>
+                <div class="project-info">
+                    <h3>ISMS-P Management Commitment</h3>
+                    <p>경영진의 참여를 보장하기 위한 보고 체계 및 실무 이행 증적 관리 프로젝트입니다.</p>
+                    <ul class="project-points">
+                        <li>정보보호위원회 운영 및 위험평가 보고 프로세스</li>
+                        <li>경영진 보안 의사결정 거버넌스 설계</li>
+                    </ul>
+                    <a href="/projects/isms-p-management-commitment-governance/" class="btn btn-small">View Details</a>
+                </div>
+            </div>
+            <div class="project-card" data-category="isms">
+                <span class="card-badge badge-isms">Governance</span>
+                <div class="project-info">
+                    <h3>ISMS-P Security Organization</h3>
+                    <p>3단계 보안 거버넌스(위원회-전담조직-협의체) 체계 구축 프로젝트입니다.</p>
+                    <ul class="project-points">
+                        <li>전담 조직 구성 및 부서별 보안 담당자 R&R</li>
+                        <li>인사 발령 및 직무기술서(JD) 아카이빙</li>
+                    </ul>
+                    <a href="/projects/isms-p-security-organization-governance/" class="btn btn-small">View Details</a>
+                </div>
+            </div>
+            <div class="project-card" data-category="isms">
+                <span class="card-badge badge-isms">Asset</span>
+                <div class="project-info">
+                    <h3>ISMS-P Scope & Asset Identification</h3>
+                    <p>인증 범위를 획정하고 CIA 기반의 보안 등급을 평가하여 위험 관리의 기초를 정립합니다.</p>
+                    <ul class="project-points">
+                        <li>핵심 서비스 및 데이터 흐름 기반 범위 획정</li>
+                        <li>자산 중요도 산정 로직 및 위험 분석 기초 정립</li>
+                    </ul>
+                    <a href="/projects/isms-p-scope-definition-guide/" class="btn btn-small">View Details</a>
+                </div>
             </div>
         </div>
+    </div>
 
-        <div class="project-card">
-            <div class="project-info">
-                <h3>Privacy Management Archive</h3>
-                <p>
-                    개인정보 보호 가이드, 증적 관리, 글로벌 컴플라이언스 대응 기록을 체계화한 업무 아카이브입니다.
-                </p>
-                <ul class="project-points">
-                    <li>개인정보 생명주기 및 흐름도 아카이빙</li>
-                    <li>글로벌 규제 대응 및 최신 법령 해석 DB</li>
-                    <li>이행점검 및 수탁사 점검 프로세스 고도화</li>
-                </ul>
-                <a href="/projects/privacy-management-archive/" class="btn btn-small">View Details</a>
+    <!-- 4. Security Research & Insights -->
+    <div class="project-category-section" data-category="research">
+        <h3>Security Research & Insights</h3>
+        <div class="projects-grid">
+            <div class="project-card" data-category="research">
+                <span class="card-badge badge-research">Research</span>
+                <div class="project-info">
+                    <h3>AI Privacy Governance Framework</h3>
+                    <p>생성형 AI 서비스 전 수명주기에 걸친 개인정보 보호 원칙과 거버넌스 구축 가이드입니다.</p>
+                    <ul class="project-points">
+                        <li>AI 수명주기 게이트별 필수 통제 항목 정의</li>
+                        <li>프라이버시 레드팀 운영 및 결정 권리 보장 체계</li>
+                    </ul>
+                    <a href="/projects/ai-privacy-governance-guide/" class="btn btn-small">View Details</a>
+                </div>
             </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-info">
-                <h3>Location Law Compliance Guide</h3>
-                <p>
-                    위치정보법(위치정보의 보호 및 이용 등에 관한 법률)에 대한 심층 분석 및 비즈니스 컴플라이언스 가이드라인입니다.
-                </p>
-                <ul class="project-points">
-                    <li>개인위치정보 vs 사물위치정보 판단 기준 수립</li>
-                    <li>위치정보사업자/LBS사업자 등록 및 신고 가이드</li>
-                    <li>긴급구조 및 공익 목적의 위치정보 활용 체계 분석</li>
-                </ul>
-                <a href="/projects/location-info-protection-guide/" class="btn btn-small">View Details</a>
+            <div class="project-card" data-category="research">
+                <div class="project-info">
+                    <h3>PISFAIR 2025 Technical Deep Dive</h3>
+                    <p>AI 보안 프레임워크(LINNDUN) 및 비정형 데이터 가명처리 실무 분석 리포트입니다.</p>
+                    <ul class="project-points">
+                        <li>OWASP LLM Top 10 전략 분석</li>
+                        <li>비정형 데이터(CT, 영상 등) 가명처리 사례</li>
+                    </ul>
+                    <a href="/projects/pisfair-2025-technical-deepdive/" class="btn btn-small">View Details</a>
+                </div>
             </div>
-        </div>
-        <div class="project-card">
-            <div class="project-info">
-                <h3>MMS vs LMS Interpretation</h3>
-                <p>
-                    개인정보 처리방침과 재위탁 계약서 간 메시지 전송 범위 불일치에 대한 기술적·계약적 해석 및 권고 리포트입니다.
-                </p>
-                <ul class="project-points">
-                    <li>처리방침과 계약 간 명시 범위 불일치 쟁점 분석</li>
-                    <li>MMS-LMS 기술적 구조 및 포괄적 해석 근거 제시</li>
-                    <li>컴플라이언스 리스크 제거를 위한 문구 현행화 권고</li>
-                </ul>
-                <a href="/projects/mms-lms-interpretation/" class="btn btn-small">View Details</a>
+            <div class="project-card" data-category="research">
+                <div class="project-info">
+                    <h3>Online Behavioral Privacy Guide</h3>
+                    <p>쿠키, ADID 및 SDK를 통한 온라인 행태정보 수집 프로세스 가이드라인입니다.</p>
+                    <ul class="project-points">
+                        <li>웹·모바일 환경별 수집 메커니즘 분석</li>
+                        <li>처리방침 내 고지 사항 및 거부 방법(Opt-out) 표준</li>
+                    </ul>
+                    <a href="/projects/online-behavioral-privacy-guide/" class="btn btn-small">View Details</a>
+                </div>
             </div>
-        </div>
-        <div class="project-card">
-            <div class="project-info">
-                <h3>SMS Retention Compliance</h3>
-                <p>
-                    문자 발송 이력 및 접속 로그의 보관 기간에 관한 3대 법령(PIPA, 통신비밀보호법, 전기통신사업법) 기반 법적 준거성 검토 리포트입니다.
-                </p>
-                <ul class="project-points">
-                    <li>개인정보보호법 기반 접속 기록 보관 기준 분석</li>
-                    <li>통신사실확인자료 및 번호 변작 방지 자료 보관 기간 검토</li>
-                    <li>통합 보관 정책 수립을 위한 법적 근거 가이드라인</li>
-                </ul>
-                <a href="/projects/sms-retention-compliance/" class="btn btn-small">View Details</a>
+            <div class="project-card" data-category="research">
+                <div class="project-info">
+                    <h3>Mobile App Access Permissions</h3>
+                    <p>정보통신망법 및 OS 정책에 따른 앱 접근권한 고지 기준 실무 가이드입니다.</p>
+                    <ul class="project-points">
+                        <li>필수/선택 권한 구분 및 목적 고지 문구 설계</li>
+                        <li>Android 런타임 및 iOS ATT 정책 대응</li>
+                    </ul>
+                    <a href="/projects/mobile-app-access-permissions-guide/" class="btn btn-small">View Details</a>
+                </div>
             </div>
-        </div>
-        <div class="project-card">
-            <div class="project-info">
-                <h3>Consent Reform Compliance Guide</h3>
-                <p>
-                    개정 개인정보 보호법에 따른 동의 체계 변화(필수동의에서 고지 후 처리로의 전환)와 실무 대응 기준을 정리한 가이드입니다.
-                </p>
-                <ul class="project-points">
-                    <li>계약 체결 및 이행을 위한 동의 없는 처리 기준 수립</li>
-                    <li>필수/선택 동의 항목 분리 및 UX 개선 방안 제시</li>
-                    <li>민감정보 및 고유식별정보의 예외적 필수동의 운영 가이드</li>
-                </ul>
-                <a href="/projects/privacy-consent-reform-guide/" class="btn btn-small">View Details</a>
-            </div>
-        </div>
-        <div class="project-card">
-            <div class="project-info">
-                <h3>Business Transfer Privacy Guide</h3>
-                <p>
-                    M&A, 영업양도 등으로 인한 개인정보 이전 시 준수해야 할 법적 의무(사전 통지, 목적 외 이용 제한 등)와 리스크 관리 지침입니다.
-                </p>
-                <ul class="project-points">
-                    <li>영업양도·합병 시 정보주체 사전 통지 및 거부권 보장 프로세스</li>
-                    <li>주식양수도와 영업양수도의 법적 차이 및 대응 방향 분석</li>
-                    <li>국외 기업 이전 시 추가 준수 요건(제28조의8) 검토</li>
-                </ul>
-                <a href="/projects/business-transfer-privacy-guide/" class="btn btn-small">View Details</a>
-            </div>
-        </div>
-        <div class="project-card">
-            <div class="project-info">
-                <h3>Statutory Obligation & Data Provision</h3>
-                <p>
-                    법률의 특별한 규정에 따른 동의 없는 개인정보 제공 기준과 법령상 의무 준수를 위한 처리 사례 및 판례 분석 리포트입니다.
-                </p>
-                <ul class="project-points">
-                    <li>PIPA 제18조 제2항에 따른 '특별한 규정'의 판단 요건 정립</li>
-                    <li>자동차손해배상법, 의료법 등 주요 법령별 데이터 제공 의무 분석</li>
-                    <li>주택조합 명부, 공익신고 등 주요 판례 및 개보위 심의 사례 요약</li>
-                </ul>
-                <a href="/projects/statutory-obligation-privacy-guide/" class="btn btn-small">View Details</a>
-            </div>
-        </div>
-        <div class="project-card">
-            <div class="project-info">
-                <h3>Purpose-extrinsic Use Exceptions</h3>
-                <p>
-                    개인정보 보호법 제18조 제2항에 따른 목적 외 이용 및 제3자 제공이 가능한 예외 사유와 실무 적용 지침입니다.
-                </p>
-                <ul class="project-points">
-                    <li>별도 동의, 특별 규정, 급박한 생명 보호 등 9대 예외 사유 분석</li>
-                    <li>공공기관 전용 예외 조항(수사, 재판 등) 및 민간 적용 한계 검토</li>
-                    <li>최신 개보위 심의례 기반의 재난·감염병 대응 정보 제공 기준 정립</li>
-                </ul>
-                <a href="/projects/purpose-extrinsic-exceptions-guide/" class="btn btn-small">View Details</a>
-            </div>
-        </div>
-        <div class="project-card">
-            <div class="project-info">
-                <h3>AI Privacy Governance Framework</h3>
-                <p>
-                    생성형 AI 서비스의 전 수명주기(기획-학습-배포-운영)에 걸친 개인정보 보호 원칙과 전사적 거버넌스 구축 방안 가이드입니다.
-                </p>
-                <ul class="project-points">
-                    <li>CPO-CAIO-CISO 간 협업을 위한 RACI 매트릭스 및 역할 정의</li>
-                    <li>AI 수명주기 게이트별 필수 통제 항목 및 PbD 설계 가이드라인</li>
-                    <li>프라이버시 레드팀 운영 및 자동화된 결정에 대한 권리 보장 체계</li>
-                </ul>
-                <a href="/projects/ai-privacy-governance-guide/" class="btn btn-small">View Details</a>
-            </div>
-        </div>
-        <div class="project-card">
-            <div class="project-info">
-                <h3>2025 Privacy Policy Q&A Guide</h3>
-                <p>
-                    최신 개인정보 처리방침 작성지침(2025.07.29)을 바탕으로 실무자들이 자주 묻는 10대 핵심 쟁점과 평가 기준을 정리한 가이드입니다.
-                </p>
-                <ul class="project-points">
-                    <li>추상적 보유기간 개선 및 수집 항목 유형화 가이드라인</li>
-                    <li>AI 학습 데이터 고지 및 자동화된 결정에 대한 안내 방식</li>
-                    <li>잘못된 작성 사례 분석을 통한 법적 리스크 및 면책 조항 점검</li>
-                </ul>
-                <a href="/projects/privacy-policy-guidelines-2025/" class="btn btn-small">View Details</a>
-            </div>
-        </div>
-        <div class="project-card">
-            <div class="project-info">
-                <h3>Integrated Privacy Processing Handbook</h3>
-                <p>
-                    개정 개인정보 보호법(2025.07.29)의 전 프로세스(수집-이용-제공-파기)를 아우르는 실무 통합 가이드라인입니다.
-                </p>
-                <ul class="project-points">
-                    <li>필수 동의 관행의 고지 방식 전환 등 2025년 핵심 개정 사항 반영</li>
-                    <li>제15조부터 제27조까지의 조문별 실무 체크포인트 및 Q&A 정리</li>
-                    <li>주민등록번호 처리 제한, 업무 위탁 및 영업양도 시 유의사항 요약</li>
-                </ul>
-                <a href="/projects/integrated-privacy-processing-guide/" class="btn btn-small">View Details</a>
-            </div>
-        </div>
-        <div class="project-card">
-            <div class="project-info">
-                <h3>PISFAIR 2025 Security Trends</h3>
-                <p>
-                    사이버 리스크 법제 변화, 글로벌 AI 정책, 전 산업 마이데이터 추진 방향 및 양자 암호 대응 전략을 정리한 종합 트렌드 리포트입니다.
-                </p>
-                <ul class="project-points">
-                    <li>사이버 보험 담보 범위 분석 및 글로벌 사고 사례(Snowflake 등) 시사점</li>
-                    <li>EU AI Act 및 국내 AI 기본법 기반의 데이터 거버넌스 방향성</li>
-                    <li>양자 내성 암호(PQC) 전환 로드맵 및 인증서 자동 관리 체계 검토</li>
-                </ul>
-                <a href="/projects/pisfair-2025-security-trends/" class="btn btn-small">View Details</a>
-            </div>
-        </div>
-        <div class="project-card">
-            <div class="project-info">
-                <h3>PISFAIR 2025 Technical Deep Dive</h3>
-                <p>
-                    AI 보안 프레임워크(LINNDUN, OWASP), 차세대 인증 표준(X.1280) 및 비정형 데이터 가명처리 실무를 분석한 기술 심층 리포트입니다.
-                </p>
-                <ul class="project-points">
-                    <li>AI 서비스 보호를 위한 LINNDUN 모델 및 OWASP LLM Top 10 전략</li>
-                    <li>비정형 데이터(CT, 영상, 음성) 가명처리 및 위험성 검토 사례 분석</li>
-                    <li>MCP(Model Context Protocol) 기반 업무 환경의 보안 위협 및 대응 로드맵</li>
-                </ul>
-                <a href="/projects/pisfair-2025-technical-deepdive/" class="btn btn-small">View Details</a>
-            </div>
-        </div>
-        <div class="project-card">
-            <div class="project-info">
-                <h3>PISFAIR 2025 Governance Strategy</h3>
-                <p>
-                    AI 프라이버시 리스크(12종), 합성데이터 및 이동형 영상기기 가이드라인, 개인정보 유출 사고 대응 7계명을 정리한 전략 리포트입니다.
-                </p>
-                <ul class="project-points">
-                    <li>AI 블랙박스 구조와 데이터 과잉 수집 등 12대 프라이버시 위협 분석</li>
-                    <li>합성데이터 생성 5단계 프로세스 및 영상정보 활용 적법성 검토</li>
-                    <li>유출 사고 발생 시 사실 확인 및 법적 신고, 고객 대응 핵심 액션 플랜</li>
-                </ul>
-                <a href="/projects/pisfair-2025-governance-strategy/" class="btn btn-small">View Details</a>
-            </div>
-        </div>
-        <div class="project-card">
-            <div class="project-info">
-                <h3>Financial Credit Info Protection Guide</h3>
-                <p>
-                    금융위원회의 최신 가이드라인(2025.05)을 바탕으로 신용정보 내부통제, 권리요구 자동화 및 사고 대응 절차를 체계화한 실무 지침서입니다.
-                </p>
-                <ul class="project-points">
-                    <li>신용정보 수집-파기 전 수명주기 내부통제 프로세스 및 체크리스트 설계</li>
-                    <li>전송요구권(MyData) 대응 절차 및 정보주체 권리요구 자동화 운영 방안</li>
-                    <li>유출 사고 시 6시간 이내 즉시 통지 및 금융위 보고 등 골든타임 대응 매뉴얼</li>
-                </ul>
-                <a href="/projects/financial-credit-info-protection-guide/" class="btn btn-small">View Details</a>
-            </div>
-        </div>
-        <div class="project-card">
-            <div class="project-info">
-                <h3>2025 Privacy Policy Forum Trends</h3>
-                <p>
-                    최근 4년간의 개인정보 유출 통계 분석과 안전관리 체계 강화 방안, 그리고 산업별 처리방침 평가 결과를 정리한 정책 리포트입니다.
-                </p>
-                <ul class="project-points">
-                    <li>공공·민간 유출 사고 유형(MFA 미비, 웹취약점 등) 및 정책적 대응 방향</li>
-                    <li>접근 기록 1년 보관 및 클라우드 보안 기준 등 안전관리 체계 개선안</li>
-                    <li>빅테크·AI·OTT 등 49개 기업 대상 처리방침 평가 점수 및 미흡 사례 분석</li>
-                </ul>
-                <a href="/projects/privacy-policy-forum-2025/" class="btn btn-small">View Details</a>
-            </div>
-        </div>
-        <div class="project-card">
-            <div class="project-info">
-                <h3>Privacy Training Curriculum Guide</h3>
-                <p>
-                    법정 의무 교육을 넘어 직무별(임원, IT, 보안팀) 맞춤형 보안 커리큘럼과 2026년 시행 예정인 AI 리스크 관리 교육 체계를 설계한 가이드입니다.
-                </p>
-                <ul class="project-points">
-                    <li>임원(3h), IT(9h), 보안팀(12h) 등 직무 특성에 따른 법정 권장 시간 및 교육 주제 정립</li>
-                    <li>인플런·유데미 기반의 시큐어 코딩, AWS IAM, ISMS-P 등 실무 중심 온라인 강의 큐레이션</li>
-                    <li>인공지능기본법 제32조에 따른 AI 수명주기 위험 식별 및 대응 특화 교육 세션 구성</li>
-                </ul>
-                <a href="/projects/privacy-training-curriculum-guide/" class="btn btn-small">View Details</a>
-            </div>
-        </div>
-        <div class="project-card">
-            <div class="project-info">
-                <h3>Mobile App Access Permissions Guide</h3>
-                <p>
-                    정보통신망법 및 OS(Android, iOS) 정책에 따른 앱 접근권한 고지 기준과 컴플라이언스 점검 항목을 정리한 실무 가이드입니다.
-                </p>
-                <ul class="project-points">
-                    <li>필수/선택 권한 구분 및 구체적 접근 목적 고지 문구 설계 기준 제시</li>
-                    <li>Android 런타임 권한 및 iOS ATT(App Tracking Transparency) 정책 대응</li>
-                    <li>권한 거부 시 서비스 제한 금지 등 법적 리스크 관리 및 체크리스트 제공</li>
-                </ul>
-                <a href="/projects/mobile-app-access-permissions-guide/" class="btn btn-small">View Details</a>
-            </div>
-        </div>
-        <div class="project-card">
-            <div class="project-info">
-                <h3>Privacy Guidelines Archive</h3>
-                <p>
-                    2014년부터 2025년까지 발행된 개인정보보호위원회 및 KISA의 주요 가이드라인, 해설서, 기술 지침을 체계적으로 정리한 통합 라이브러리입니다.
-                </p>
-                <ul class="project-points">
-                    <li>AI, 합성데이터, 마이데이터 등 신기술 분야의 최신 가이드라인 연도별 분류</li>
-                    <li>암호화, 노출방지, 유출대응 등 실무에 필수적인 기술 안내서 아카이빙</li>
-                    <li>인사노무, 온라인 서비스 등 분야별 표준 해석 및 지침 데이터베이스 구축</li>
-                </ul>
-                <a href="/projects/privacy-guidelines-archive/" class="btn btn-small">View Details</a>
-            </div>
-        </div>
-        <div class="project-card">
-            <div class="project-info">
-                <h3>HR & Labor Privacy Compliance Guide</h3>
-                <p>
-                    근로기준법, 채용절차법 및 개인정보 보호법을 연계하여 채용부터 퇴직까지의 인사·노무 프로세스 전반에 걸친 개인정보 처리 기준을 정리한 지침서입니다.
-                </p>
-                <ul class="project-points">
-                    <li>채용 전형별 최소 수집 원칙 및 채용절차법상 수집 금지 항목(신체 조건, 가족 정보 등) 분석</li>
-                    <li>임금대장, 4대 보험, 연말정산 등 법령 근거에 따른 정보 보유 기간 및 주민번호 처리 기준 정립</li>
-                    <li>퇴직 근로자의 경력증명 목적 보관(3년) 및 세무 증빙(5년) 등 단계별 파기·분리보관 전략</li>
-                </ul>
-                <a href="/projects/hr-privacy-compliance-guide/" class="btn btn-small">View Details</a>
-            </div>
-        </div>
-        <div class="project-card">
-            <div class="project-info">
-                <h3>Online Behavioral Privacy Guide</h3>
-                <p>
-                    쿠키(Cookie), 광고 식별자(ADID) 및 SDK를 통한 온라인 행태정보 수집 프로세스와 개인정보 처리방침 내 필수 고지 사항을 정리한 가이드라인입니다.
-                </p>
-                <ul class="project-points">
-                    <li>웹·모바일 환경별 행태정보 수집 메커니즘 및 광고 입찰(DSP/ADX) 워크플로우 분석</li>
-                    <li>개인정보 처리방침 내 자동 수집 장치 설치·운영 및 거부 방법(Opt-out) 작성 표준 제시</li>
-                    <li>Google Analytics, NAVER Analytics 등 제3자 분석 도구의 데이터 수집 목적 및 책임 범위 정립</li>
-                </ul>
-                <a href="/projects/online-behavioral-privacy-guide/" class="btn btn-small">View Details</a>
-            </div>
-        </div>
-        <div class="project-card">
-            <div class="project-info">
-                <h3>CCTV Privacy Compliance Guide</h3>
-                <p>
-                    고정형 및 이동형 영상정보처리기기의 설치 기준, 개인영상정보의 안전성 확보 조치 및 제3자 제공 절차를 정리한 실무 지침서입니다.
-                </p>
-                <ul class="project-points">
-                    <li>공개/비공개 장소별 설치 원칙(최소 설치, 녹음 금지) 및 안내판 부착 기준 분석</li>
-                    <li>근로 공간 내 모니터링 목적 CCTV 설치 시 노사 협의 및 사생활 보호 조치 프로세스 정립</li>
-                    <li>영상정보 보관·파기 주기 관리 및 수사기관 영장에 따른 정보 제공 시 비식별 처리(모자이크) 기준 제시</li>
-                </ul>
-                <a href="/projects/cctv-privacy-compliance-guide/" class="btn btn-small">View Details</a>
-            </div>
-        </div>
-        <div class="project-card">
-            <div class="project-info">
-                <h3>Privacy Liability Insurance Guide</h3>
-                <p>
-                    개인정보 유출 사고 발생 시 정보주체의 손해배상 청구에 대비하기 위한 책임보험 가이드 및 2024년 개정 법령 분석 자료입니다.
-                </p>
-                <ul class="project-points">
-                    <li>2024년 3월 15일 시행된 의무 가입 대상 확대(전체 처리자) 및 기준(매출 10억, 1만 명) 강화 내용 분석</li>
-                    <li>기업 규모(매출액, 정보주체 수)에 따른 최저 가입 금액(5천만 원~10억 원) 차등 적용 기준 정립</li>
-                    <li>공공기관, 소상공인, 비영리단체 등 의무 가입 면제 대상 확인 및 리스크 관리 전략 제시</li>
-                </ul>
-                <a href="/projects/privacy-liability-insurance-guide/" class="btn btn-small">View Details</a>
-            </div>
-        </div>
-        <div class="project-card">
-            <div class="project-info">
-                <h3>Children's Privacy Protection Guide</h3>
-                <p>
-                    만 14세 미만 아동의 개인정보 처리 시 필수적인 법정대리인 동의 절차와 아동용 처리방침 작성 기준을 정리한 가이드입니다.
-                </p>
-                <ul class="project-points">
-                    <li>아동이 이해하기 쉬운 언어를 사용한 '아동용 개인정보 처리방침' 템플릿 및 필수 포함 항목 제시</li>
-                    <li>휴대폰 인증, 카드 정보, 서면 등 법정대리인 동의 확인 방법별 실무 적용 가이드 및 보안 유의사항</li>
-                    <li>2024년 12월 도입된 '지우개 서비스' 연계 아동·청소년의 자기게시물 접근배제 및 잊혀질 권리 보장 방안</li>
-                </ul>
-                <a href="/projects/children-privacy-protection-guide/" class="btn btn-small">View Details</a>
-            </div>
-        </div>
-        <div class="project-card">
-            <div class="project-info">
-                <h3>Privacy Ops Guide Database</h3>
-                <p>
-                    ISMS-P 인증 심사 및 상시 점검에 대응하기 위한 개인정보 처리 시스템의 핵심 운영 업무 표준 절차(SOP) 데이터베이스입니다.
-                </p>
-                <ul class="project-points">
-                    <li>접속기록 검토, 개인정보 파기 보고, 취급자 현황 관리 등 법적 필수 점검 항목별 증적 자료 확보 방안 제시</li>
-                    <li>계정 발급·삭제 및 권한 변경 절차 정립을 통한 내부 통제 강화 및 최소 권한 원칙(Least Privilege) 이행</li>
-                    <li>정기적인 실무 운영 점검을 위한 체크리스트 및 보고서 템플릿 연계 지식 베이스 구축</li>
-                </ul>
-                <a href="/projects/privacy-ops-guide-database/" class="btn btn-small">View Details</a>
-            </div>
-        </div>
-        <div class="project-card">
-            <div class="project-info">
-                <h3>Privacy Internal Audit Automation</h3>
-                <p>
-                    개인정보 보호법 제29조에 따른 법정 의무인 내부관리계획 이행점검을 Excel 기반으로 자동화하고 연간 준거성을 관리하는 시스템입니다.
-                </p>
-                <ul class="project-points">
-                    <li>2020년부터 2026년까지의 연간 이행점검 이력 관리 및 대시보드를 통한 실시간 준거성 가시화</li>
-                    <li>IF/VLOOKUP 함수 및 데이터 유효성 검사를 활용한 체크리스트 자동화로 입력 오류 방지 및 점검 시간 단축</li>
-                    <li>법적 안전조치 기준(제4조 등)에 따른 자체 점검 결과 보고 및 미비점 조치 계획 연동 체계 구축</li>
-                </ul>
-                <a href="/projects/privacy-internal-audit-automation/" class="btn btn-small">View Details</a>
-            </div>
-        </div>
-        <div class="project-card">
-            <div class="project-info">
-                <h3>Privacy Outsourcing Governance Guide</h3>
-                <p>
-                    개인정보보호법 제26조에 따른 수탁사 관리·감독 의무를 이행하기 위한 위·수탁 계약 관리 및 제3자 제공 구분 실무 가이드입니다.
-                </p>
-                <ul class="project-points">
-                    <li>개인정보 처리 위탁과 제3자 제공의 법적 판단 기준 정립 및 이익 주체에 따른 책임 소재 분석</li>
-                    <li>수탁사 보안 역량 사전 평가(Assessment), 계약서 작성, 정기 점검, 종료 시 파기 확인으로 이어지는 생애주기 관리</li>
-                    <li>2025년 7월 통합 안내서의 최신 지침을 반영한 위탁 관리 감독 프로세스 고도화 및 표준 계약서 양식 체계화</li>
-                </ul>
-                <a href="/projects/privacy-outsourcing-governance-guide/" class="btn btn-small">View Details</a>
-            </div>
-        </div>
-        <div class="project-card">
-            <div class="project-info">
-                <h3>Privacy Lifecycle Governance Guide</h3>
-                <p>
-                    개인정보의 수집부터 파기까지 전 과정을 정의하고, 2025년 4월 개정된 처리방침 작성지침에 따른 단계별 법적 준수 사항을 정리한 가이드입니다.
-                </p>
-                <ul class="project-points">
-                    <li>수집-보관-이용·제공-파기의 4단계 생명주기별 핵심 보안 요구사항 및 개인정보 영향평가 기준 정립</li>
-                    <li>2025년 4월 최신 지침을 반영한 온라인 행태정보(쿠키 등) 수집 고지 및 제3자 제공 투명성 강화 방안</li>
-                    <li>보유 기간 경과 데이터의 기술적 소거 및 분리 보관 절차 등 완결성 있는 데이터 파기 프로세스 설계</li>
-                </ul>
-                <a href="/projects/privacy-lifecycle-governance-guide/" class="btn btn-small">View Details</a>
-            </div>
-        </div>
-        <div class="project-card">
-            <div class="project-info">
-                <h3>ISMS-P Certification Management</h3>
-                <p>
-                    쿠폰 서비스 운영 환경을 대상으로 ISMS-P 인증 기준에 따른 조직적 R&R 수립 및 증적 자료를 체계화한 통합 관리 데이터베이스입니다.
-                </p>
-                <ul class="project-points">
-                    <li>102개 인증 항목별 정보보안·개발·인사·영업 부서의 세부 역할 정의 및 상시 보안 수준 점검 체계 구축</li>
-                    <li>ISMS-P 성숙도 모델(Maturity Model) 분석을 통한 보안 취약 구간 식별 및 연간 개선 로드맵 수립</li>
-                    <li>2025년 최신 ISMS-P 운영 가이드 개정판을 반영한 증적 관리 자동화 및 심사 대응 지식 베이스 구축</li>
-                </ul>
-                <a href="/projects/isms-p-certification-management/" class="btn btn-small">View Details</a>
-            </div>
-        </div>
-        <div class="project-card">
-            <div class="project-info">
-                <h3>ISMS-P Management Commitment Governance</h3>
-                <p>
-                    ISMS-P 인증의 첫 번째 항목인 경영진의 참여를 보장하기 위한 보고 및 의사결정 체계 수립과 실무 이행 증적 관리 프로젝트입니다.
-                </p>
-                <ul class="project-points">
-                    <li>2025년도 정보보호 관리규정 및 지침 개정에 대한 최고경영자 전자결재 승인 프로세스 수립 및 이행</li>
-                    <li>정보보호위원회 운영 및 위험평가 보고 등 경영진의 실질적인 보안 의사결정 참여를 위한 거버넌스 아키텍처 설계</li>
-                    <li>심사 결함 사례 분석을 통한 정기/비정기 보고 체계의 완결성 확보 및 책임 추적성(Traceability) 강화</li>
-                </ul>
-                <a href="/projects/isms-p-management-commitment-governance/" class="btn btn-small">View Details</a>
-            </div>
-        </div>
-        <div class="project-card">
-            <div class="project-info">
-                <h3>ISMS-P Chief Officer Designation</h3>
-                <p>
-                    ISMS-P 인증 기준 1.1.2에 따른 최고정보보호책임자(CISO) 및 개인정보보호책임자(CPO)의 공식 지정 및 법적 준거성 확보 프로젝트입니다.
-                </p>
-                <ul class="project-points">
-                    <li>자산 규모 및 서비스 특성에 따른 법적 자격 요건 분석을 통한 임원급 최고책임자 임명 및 직무기술서(JD) 정립</li>
-                    <li>자산 5천억 원 이상 및 ISMS 의무 대상 기업의 CISO 겸직 금지 의무 준수 여부 검토 및 인사 명령 프로세스 구축</li>
-                    <li>과학기술정보통신부 CISO 신고 절차 이행 및 내부관리계획 내 CPO 지정 사항 명시를 통한 인증 증적 완결성 확보</li>
-                </ul>
-                <a href="/projects/isms-p-chief-officer-designation-guide/" class="btn btn-small">View Details</a>
-            </div>
-        </div>
-        <div class="project-card">
-            <div class="project-info">
-                <h3>ISMS-P Security Organizational Governance</h3>
-                <p>
-                    ISMS-P 인증 기준 1.1.3에 따른 정보보호 위원회, 전담 실무 조직, 전사 실무 협의체로 구성된 3단계 보안 거버넌스 체계 구축 프로젝트입니다.
-                </p>
-                <ul class="project-points">
-                    <li>경영진이 참여하는 정보보호 위원회(Decision-making) 구성을 통한 전사 보안 정책 및 예산 의사결정 체계 확립</li>
-                    <li>전문 자격(ISMS-P, CPPG 등)을 보유한 실무 전담 조직 구성 및 부서별 보안 담당자가 참여하는 실무 협의체 운영 프로세스 설계</li>
-                    <li>위원회 회의록, 직무기술서(JD), 인사 발령 등 심사 시 조직 운영의 실재성을 입증하는 핵심 증적 자료 아카이빙</li>
-                </ul>
-                <a href="/projects/isms-p-security-organization-governance/" class="btn btn-small">View Details</a>
-            </div>
-        </div>
-        <div class="project-card">
-            <div class="project-info">
-                <h3>ISMS-P Scope Definition Guide</h3>
-                <p>
-                    ISMS-P 인증 기준 1.1.4에 따라 핵심 서비스 및 데이터 흐름을 기반으로 인증 범위를 획정하고 자산 목록을 체계화한 범위 관리 프로젝트입니다.
-                </p>
-                <ul class="project-points">
-                    <li>서비스 제공과 관련된 조직, 정보시스템, 네트워크 및 물리적 위치를 식별하여 완결성 있는 관리체계 범위 정의서 수립</li>
-                    <li>개발 및 시험 환경, 테스트 단말기, 외주 인력 PC 등 심사 시 누락되기 쉬운 핵심 자산 식별 및 관리 프로세스 구축</li>
-                    <li>개인정보 흐름도(PI Flow) 및 네트워크 구성도 현행화를 통한 보안 가시성 확보 및 예외 사항에 대한 책임자 승인 체계 마련</li>
-                </ul>
-                <a href="/projects/isms-p-scope-definition-guide/" class="btn btn-small">View Details</a>
-            </div>
-        </div>
-        <div class="project-card">
-            <div class="project-info">
-                <h3>ISMS-P Policy Governance Guide</h3>
-                <p>
-                    ISMS-P 인증 기준 1.1.5에 따라 정책-지침-절차서로 이어지는 문서 위계 체계를 구축하고 전사적 보안 가이드라인을 정립한 규정 관리 프로젝트입니다.
-                </p>
-                <ul class="project-points">
-                    <li>최상위 정책부터 보호대상(서버, DB, 클라우드 등) 및 수행주체(임직원, 개발자) 관점의 세부 보안 지침 체계 설계</li>
-                    <li>개인정보 보호법상 내부관리계획의 16개 필수 항목(조직, 접근통제, 암호화 등)을 완벽히 반영한 규정 현행화 및 경영진 승인 이행</li>
-                    <li>최신 개정 규정의 전사 게시 및 임직원 전파 프로세스 구축을 통한 실무 보안 준거성 및 인식 제고 활동 아카이빙</li>
-                </ul>
-                <a href="/projects/isms-p-policy-governance-guide/" class="btn btn-small">View Details</a>
-            </div>
-        </div>
-        <div class="project-card">
-            <div class="project-info">
-                <h3>ISMS-P Resource Allocation Governance</h3>
-                <p>
-                    ISMS-P 인증 기준 1.1.6에 따라 분야별 보안 전문 인력을 확보하고 연간 정보보호 예산 및 자원 할당 체계를 구축한 리소스 거버넌스 프로젝트입니다.
-                </p>
-                <ul class="project-points">
-                    <li>자격증(ISMS-P, CISSP 등) 및 실무 경력을 보유한 전문 인력 확보와 연간 보안 교육 로드맵 수립을 통한 조직 전문성 강화</li>
-                    <li>기술적·관리적 보호조치 이행을 위한 연도별 보안 투자 계획(Budgeting) 수립 및 최고경영자 승인 프로세스 정립</li>
-                    <li>연간 세부추진 계획에 따른 수행 결과를 심사 분석하여 경영진에게 보고하고 차년도 계획에 환류(Feedback)하는 성과 관리 체계 구축</li>
-                </ul>
-                <a href="/projects/isms-p-resource-allocation-governance/" class="btn btn-small">View Details</a>
-            </div>
-        </div>
-        <div class="project-card">
-            <div class="project-info">
-                <h3>ISMS-P Information Asset Identification</h3>
-                <p>
-                    ISMS-P 인증 기준 1.2.1에 따라 전사 정보자산을 체계적으로 식별하고 CIA 기반의 보안 등급을 평가하여 위험 관리의 기초를 정립한 프로젝트입니다.
-                </p>
-                <ul class="project-points">
-                    <li>서버, DB, SW 및 클라우드(SaaS/PaaS) 자산을 포함한 통합 분류 체계 수립 및 관리 책임자 매핑</li>
-                    <li>기밀성·무결성·가용성(CIA) 및 법적 준거성을 고려한 중요도 산정 로직 설계를 통한 자산 가치 평가의 객관성 확보</li>
-                    <li>정기 자산 실사 및 현행화 프로세스 구축을 통해 인증 범위 내 누락 없는 자산 관리 대장 및 위험 분석 기초 데이터 정립</li>
-                </ul>
-                <a href="/projects/isms-p-asset-identification-guide/" class="btn btn-small">View Details</a>
+            <div class="project-card" data-category="research">
+                <div class="project-info">
+                    <h3>CCTV Privacy Compliance Guide</h3>
+                    <p>고정형·이동형 영상정보처리기기 설치 기준 및 안전성 확보 조치 지침서입니다.</p>
+                    <ul class="project-points">
+                        <li>영상정보 보관·파기 주기 및 비식별 처리 기준</li>
+                        <li>근로 공간 내 모니터링 노사 협의 프로세스</li>
+                    </ul>
+                    <a href="/projects/cctv-privacy-compliance-guide/" class="btn btn-small">View Details</a>
+                </div>
             </div>
         </div>
     </div>
 </section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const sections = document.querySelectorAll('.project-category-section');
+    const cards = document.querySelectorAll('.project-card');
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const filter = btn.getAttribute('data-filter');
+
+            // Update button state
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            if (filter === 'all') {
+                sections.forEach(s => s.classList.remove('hidden'));
+                cards.forEach(c => c.classList.remove('hidden'));
+            } else {
+                sections.forEach(s => {
+                    if (s.getAttribute('data-category') === filter) {
+                        s.classList.remove('hidden');
+                        // Show all cards in visible section
+                        s.querySelectorAll('.project-card').forEach(c => c.classList.remove('hidden'));
+                    } else {
+                        s.classList.add('hidden');
+                    }
+                });
+            }
+        });
+    });
+});
+</script>
 
 <section id="research">
     <h2>Research &amp; Resources</h2>
