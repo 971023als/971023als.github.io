@@ -417,6 +417,20 @@ title: "Home"
                 <a href="/projects/privacy-liability-insurance-guide/" class="btn btn-small">View Details</a>
             </div>
         </div>
+        <div class="project-card">
+            <div class="project-info">
+                <h3>Children's Privacy Protection Guide</h3>
+                <p>
+                    만 14세 미만 아동의 개인정보 처리 시 필수적인 법정대리인 동의 절차와 아동용 처리방침 작성 기준을 정리한 가이드입니다.
+                </p>
+                <ul class="project-points">
+                    <li>아동이 이해하기 쉬운 언어를 사용한 '아동용 개인정보 처리방침' 템플릿 및 필수 포함 항목 제시</li>
+                    <li>휴대폰 인증, 카드 정보, 서면 등 법정대리인 동의 확인 방법별 실무 적용 가이드 및 보안 유의사항</li>
+                    <li>2024년 12월 도입된 '지우개 서비스' 연계 아동·청소년의 자기게시물 접근배제 및 잊혀질 권리 보장 방안</li>
+                </ul>
+                <a href="/projects/children-privacy-protection-guide/" class="btn btn-small">View Details</a>
+            </div>
+        </div>
     </div>
 </section>
 
