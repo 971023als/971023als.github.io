@@ -319,6 +319,20 @@ title: "Home"
                 <a href="/projects/privacy-policy-forum-2025/" class="btn btn-small">View Details</a>
             </div>
         </div>
+        <div class="project-card">
+            <div class="project-info">
+                <h3>Privacy Training Curriculum Guide</h3>
+                <p>
+                    법정 의무 교육을 넘어 직무별(임원, IT, 보안팀) 맞춤형 보안 커리큘럼과 2026년 시행 예정인 AI 리스크 관리 교육 체계를 설계한 가이드입니다.
+                </p>
+                <ul class="project-points">
+                    <li>임원(3h), IT(9h), 보안팀(12h) 등 직무 특성에 따른 법정 권장 시간 및 교육 주제 정립</li>
+                    <li>인플런·유데미 기반의 시큐어 코딩, AWS IAM, ISMS-P 등 실무 중심 온라인 강의 큐레이션</li>
+                    <li>인공지능기본법 제32조에 따른 AI 수명주기 위험 식별 및 대응 특화 교육 세션 구성</li>
+                </ul>
+                <a href="/projects/privacy-training-curriculum-guide/" class="btn btn-small">View Details</a>
+            </div>
+        </div>
     </div>
 </section>
 
