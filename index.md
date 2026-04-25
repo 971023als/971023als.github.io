@@ -249,6 +249,20 @@ title: "Home"
                 <a href="/projects/integrated-privacy-processing-guide/" class="btn btn-small">View Details</a>
             </div>
         </div>
+        <div class="project-card">
+            <div class="project-info">
+                <h3>PISFAIR 2025 Security Trends</h3>
+                <p>
+                    사이버 리스크 법제 변화, 글로벌 AI 정책, 전 산업 마이데이터 추진 방향 및 양자 암호 대응 전략을 정리한 종합 트렌드 리포트입니다.
+                </p>
+                <ul class="project-points">
+                    <li>사이버 보험 담보 범위 분석 및 글로벌 사고 사례(Snowflake 등) 시사점</li>
+                    <li>EU AI Act 및 국내 AI 기본법 기반의 데이터 거버넌스 방향성</li>
+                    <li>양자 내성 암호(PQC) 전환 로드맵 및 인증서 자동 관리 체계 검토</li>
+                </ul>
+                <a href="/projects/pisfair-2025-security-trends/" class="btn btn-small">View Details</a>
+            </div>
+        </div>
     </div>
 </section>
 
