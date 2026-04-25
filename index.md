@@ -529,6 +529,20 @@ title: "Home"
                 <a href="/projects/isms-p-chief-officer-designation-guide/" class="btn btn-small">View Details</a>
             </div>
         </div>
+        <div class="project-card">
+            <div class="project-info">
+                <h3>ISMS-P Security Organizational Governance</h3>
+                <p>
+                    ISMS-P 인증 기준 1.1.3에 따른 정보보호 위원회, 전담 실무 조직, 전사 실무 협의체로 구성된 3단계 보안 거버넌스 체계 구축 프로젝트입니다.
+                </p>
+                <ul class="project-points">
+                    <li>경영진이 참여하는 정보보호 위원회(Decision-making) 구성을 통한 전사 보안 정책 및 예산 의사결정 체계 확립</li>
+                    <li>전문 자격(ISMS-P, CPPG 등)을 보유한 실무 전담 조직 구성 및 부서별 보안 담당자가 참여하는 실무 협의체 운영 프로세스 설계</li>
+                    <li>위원회 회의록, 직무기술서(JD), 인사 발령 등 심사 시 조직 운영의 실재성을 입증하는 핵심 증적 자료 아카이빙</li>
+                </ul>
+                <a href="/projects/isms-p-security-organization-governance/" class="btn btn-small">View Details</a>
+            </div>
+        </div>
     </div>
 </section>
 
