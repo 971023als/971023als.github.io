@@ -315,33 +315,51 @@ title: "Home"
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const filterBtns = document.querySelectorAll('.filter-btn');
+    const searchInput = document.getElementById('project-search');
     const sections = document.querySelectorAll('.project-category-section');
-    const cards = document.querySelectorAll('.project-card');
+    const allCards = document.querySelectorAll('.project-card');
+    let currentFilter = 'all';
+
+    function updateDisplay() {
+        const searchTerm = searchInput.value.toLowerCase();
+
+        sections.forEach(section => {
+            let sectionHasVisibleCards = false;
+            const category = section.getAttribute('data-category');
+            const cards = section.querySelectorAll('.project-card');
+
+            cards.forEach(card => {
+                const text = card.innerText.toLowerCase();
+                const matchesFilter = (currentFilter === 'all' || category === currentFilter);
+                const matchesSearch = text.includes(searchTerm);
+
+                if (matchesFilter && matchesSearch) {
+                    card.classList.remove('hidden');
+                    sectionHasVisibleCards = true;
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+
+            // Show/Hide section based on whether it has visible cards
+            if (sectionHasVisibleCards) {
+                section.classList.remove('hidden');
+            } else {
+                section.classList.add('hidden');
+            }
+        });
+    }
 
     filterBtns.forEach(btn => {
         btn.addEventListener('click', () => {
-            const filter = btn.getAttribute('data-filter');
-
-            // Update button state
             filterBtns.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
-
-            if (filter === 'all') {
-                sections.forEach(s => s.classList.remove('hidden'));
-                cards.forEach(c => c.classList.remove('hidden'));
-            } else {
-                sections.forEach(s => {
-                    if (s.getAttribute('data-category') === filter) {
-                        s.classList.remove('hidden');
-                        // Show all cards in visible section
-                        s.querySelectorAll('.project-card').forEach(c => c.classList.remove('hidden'));
-                    } else {
-                        s.classList.add('hidden');
-                    }
-                });
-            }
+            currentFilter = btn.getAttribute('data-filter');
+            updateDisplay();
         });
     });
+
+    searchInput.addEventListener('input', updateDisplay);
 });
 </script>
 
