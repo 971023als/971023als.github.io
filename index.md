@@ -33,12 +33,18 @@ title: "Home"
 <section id="projects">
     <h2>Featured Projects</h2>
 
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" id="project-search" placeholder="프로젝트 명칭, 키워드 검색 (예: ISMS-P, AWS, 가이드...)" aria-label="Search projects">
+        <span class="search-icon">🔍</span>
+    </div>
+
     <div class="filter-container">
         <button class="filter-btn active" data-filter="all">전체 보기</button>
-        <button class="filter-btn" data-filter="automation">🛠️ Automation & Tools</button>
-        <button class="filter-btn" data-filter="compliance">⚖️ Compliance & SOPs</button>
-        <button class="filter-btn" data-filter="isms">🛡️ ISMS-P Certification</button>
-        <button class="filter-btn" data-filter="research">🔍 Security Research</button>
+        <button class="filter-btn" data-filter="automation">🛠️ Automation</button>
+        <button class="filter-btn" data-filter="compliance">⚖️ Compliance</button>
+        <button class="filter-btn" data-filter="isms">🛡️ ISMS-P</button>
+        <button class="filter-btn" data-filter="research">🔍 Research</button>
     </div>
 
     <!-- 1. Automation & Tools -->
@@ -168,7 +174,7 @@ title: "Home"
         <h3>ISMS-P Governance & Certification</h3>
         <div class="projects-grid">
             <div class="project-card" data-category="isms">
-                <span class="card-badge badge-isms">ISMS-P</span>
+                <span class="card-badge badge-isms">Certification</span>
                 <div class="project-info">
                     <h3>ISMS-P Certification Management</h3>
                     <p>ISMS-P 인증 기준에 따른 조직적 R&R 수립 및 증적 자료 관리 데이터베이스입니다.</p>
@@ -204,15 +210,39 @@ title: "Home"
                 </div>
             </div>
             <div class="project-card" data-category="isms">
+                <span class="card-badge badge-isms">Governance</span>
+                <div class="project-info">
+                    <h3>ISMS-P Policy & Chief Officer</h3>
+                    <p>정보보호 최고책임자 지정 및 보안 정책·지침 수립 거버넌스 가이드입니다.</p>
+                    <ul class="project-points">
+                        <li>CISO/CPO 지정 요건 및 법적 신고 절차</li>
+                        <li>조직 내 보안 규정 제·개정 승인 프로세스</li>
+                    </ul>
+                    <a href="/projects/isms-p-policy-governance-guide/" class="btn btn-small">View Details</a>
+                </div>
+            </div>
+            <div class="project-card" data-category="isms">
                 <span class="card-badge badge-isms">Asset</span>
                 <div class="project-info">
                     <h3>ISMS-P Scope & Asset Identification</h3>
-                    <p>인증 범위를 획정하고 CIA 기반의 보안 등급을 평가하여 위험 관리의 기초를 정립합니다.</p>
+                    <p>인증 범위를 획정하고 보안 등급에 따른 자산 식별 및 관리 체계를 정립합니다.</p>
                     <ul class="project-points">
-                        <li>핵심 서비스 및 데이터 흐름 기반 범위 획정</li>
-                        <li>자산 중요도 산정 로직 및 위험 분석 기초 정립</li>
+                        <li>핵심 서비스 흐름 기반의 범위 산정 로직</li>
+                        <li>정보자산 분류 기준 및 등급 부여 가이드</li>
                     </ul>
-                    <a href="/projects/isms-p-scope-definition-guide/" class="btn btn-small">View Details</a>
+                    <a href="/projects/isms-p-asset-identification-guide/" class="btn btn-small">View Details</a>
+                </div>
+            </div>
+            <div class="project-card" data-category="isms">
+                <span class="card-badge badge-isms">Resource</span>
+                <div class="project-info">
+                    <h3>ISMS-P Resource Allocation</h3>
+                    <p>보안 목표 달성을 위한 인적·물적 자원 할당 및 예산 관리 거버넌스입니다.</p>
+                    <ul class="project-points">
+                        <li>연간 보안 예산 수립 및 보안 교육 이수 관리</li>
+                        <li>보안 전담 인력 및 직무별 적정성 검토</li>
+                    </ul>
+                    <a href="/projects/isms-p-resource-allocation-governance/" class="btn btn-small">View Details</a>
                 </div>
             </div>
         </div>

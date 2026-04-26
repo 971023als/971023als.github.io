@@ -1105,3 +1105,39 @@ footer {
     text-align: center;
     padding-top: 2rem;
 }
+
+/* Search Bar Styles */
+.search-container {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#project-search {
+    width: 100%;
+    padding: 1rem 1.5rem 1rem 3.5rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 50px;
+    font-size: 1rem;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    color: var(--text-color);
+}
+
+#project-search:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 20px rgba(37, 99, 235, 0.15);
+    transform: translateY(-2px);
+}
+
+.search-icon {
+    position: absolute;
+    left: 1.5rem;
+    font-size: 1.2rem;
+    color: #94a3b8;
+    pointer-events: none;
+}
