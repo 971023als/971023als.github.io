@@ -3,7 +3,7 @@ layout: default
 title: "Home"
 ---
 
-<div class="hero">
+<div class="hero animate-in">
     <h1>이민형</h1>
     <p>
         개인정보보호, 클라우드 보안, AI 기반 보안 자동화를 연구하고 구현하는 보안 실무자입니다.
@@ -14,7 +14,7 @@ title: "Home"
     </div>
 </div>
 
-<section id="skills">
+<section id="skills" class="animate-in">
     <h2>Skills &amp; Technologies</h2>
     <div class="skills-grid">
         <div class="skill-tag">Python</div>
@@ -30,7 +30,7 @@ title: "Home"
     </div>
 </section>
 
-<section id="projects">
+<section id="projects" class="animate-in">
     <h2>Featured Projects</h2>
 
     <!-- Search Bar -->
@@ -317,12 +317,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const filterBtns = document.querySelectorAll('.filter-btn');
     const searchInput = document.getElementById('project-search');
     const sections = document.querySelectorAll('.project-category-section');
-    const allCards = document.querySelectorAll('.project-card');
+    const researchSection = document.getElementById('research');
+    const researchCards = document.querySelectorAll('.research-card');
     let currentFilter = 'all';
 
     function updateDisplay() {
-        const searchTerm = searchInput.value.toLowerCase();
+        const searchTerm = searchInput.value.toLowerCase().trim();
 
+        // 1. Featured Projects Filtering
         sections.forEach(section => {
             let sectionHasVisibleCards = false;
             const category = section.getAttribute('data-category');
@@ -331,7 +333,7 @@ document.addEventListener('DOMContentLoaded', function() {
             cards.forEach(card => {
                 const text = card.innerText.toLowerCase();
                 const matchesFilter = (currentFilter === 'all' || category === currentFilter);
-                const matchesSearch = text.includes(searchTerm);
+                const matchesSearch = searchTerm === "" || text.includes(searchTerm);
 
                 if (matchesFilter && matchesSearch) {
                     card.classList.remove('hidden');
@@ -348,6 +350,28 @@ document.addEventListener('DOMContentLoaded', function() {
                 section.classList.add('hidden');
             }
         });
+
+        // 2. Research Section Filtering (Search only)
+        if (researchSection) {
+            let researchHasVisible = false;
+            researchCards.forEach(card => {
+                const text = card.innerText.toLowerCase();
+                const matchesSearch = searchTerm === "" || text.includes(searchTerm);
+                
+                if (matchesSearch) {
+                    card.style.display = ''; // Show
+                    researchHasVisible = true;
+                } else {
+                    card.style.display = 'none'; // Hide
+                }
+            });
+            
+            if (researchHasVisible) {
+                researchSection.classList.remove('hidden');
+            } else {
+                researchSection.classList.add('hidden');
+            }
+        }
     }
 
     filterBtns.forEach(btn => {
@@ -363,7 +387,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-<section id="research">
+<section id="research" class="animate-in">
     <h2>Research &amp; Resources</h2>
     <div class="research-card">
         <span class="research-badge">Current Thesis Preparation</span>
@@ -387,7 +411,7 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
 </section>
 
-<section id="blog">
+<section id="blog" class="animate-in">
     <h2>Latest Insights</h2>
     <ul class="post-list">
         {% for post in site.posts limit:3 %}

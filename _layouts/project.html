@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<article class="project-detail">
+<article class="project-detail animate-in">
     <header class="project-header">
         <div class="project-meta">
             <span class="category-badge">{{ page.category }}</span>
@@ -19,13 +19,13 @@ layout: default
 
     <div class="project-content-grid">
         <aside class="project-sidebar">
-            <div class="sidebar-block">
+            <div class="sidebar-block glass">
                 <h4>Project Info</h4>
                 <p style="font-size: 0.9rem; margin-bottom: 0.5rem;"><strong>Date:</strong> {{ page.date | date: "%Y. %m" }}</p>
                 <p style="font-size: 0.9rem;"><strong>Category:</strong> {{ page.category }}</p>
             </div>
 
-            <div class="sidebar-block">
+            <div class="sidebar-block glass">
                 <h4>Tech Stack</h4>
                 <div class="skills-grid mini">
                     {% for tech in page.tech %}
@@ -35,7 +35,7 @@ layout: default
             </div>
 
             {% if page.github %}
-            <div class="sidebar-block">
+            <div class="sidebar-block glass">
                 <h4>Source Code</h4>
                 <a href="{{ page.github }}" class="btn btn-small" style="width: 100%; text-align: center;" target="_blank">View on GitHub</a>
             </div>

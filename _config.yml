@@ -10,6 +10,11 @@ url: "https://971023als.github.io" # 실제 배포 URL로 업데이트
 
 twitter_username: "jekyllrb"
 github_username: "971023als"
+image: "/assets/banner.png" # 사이트 기본 공유 이미지
+
+twitter:
+  username: "971023als"
+  card: summary_large_image
 
 # Post settings
 future: true
