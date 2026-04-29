@@ -864,8 +864,7 @@ footer {
     -webkit-backdrop-filter: blur(12px) saturate(180%);
     border: 1px solid var(--glass-border);
 }
-    text-align: center;
-}
+
 
 @media (max-width: 950px) {
     .project-content-grid {
