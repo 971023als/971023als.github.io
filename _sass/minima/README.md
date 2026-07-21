@@ -1,10 +1,6 @@
 # minima
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
-
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
-
-TODO: Delete this and the text above, and describe your gem
+This directory holds a customized copy of the Minima Jekyll theme's Sass files, used to style 971023als's security portfolio site (`971023als.github.io`). The site's `_config.yml` loads the theme via the `github-pages` gem, while these local `_sass/minima` partials provide the site-specific style overrides.
 
 ## Installation
 
@@ -30,7 +26,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+The Sass partials here (`_base.scss`, `_layout.scss`, `_syntax-highlighting.scss`, `_variables.scss`) are imported by `_sass/minima.scss` to style the site's layouts and pages. Edit these partials to change fonts, colors, spacing, and syntax highlighting for the portfolio site.
 
 ## Contributing
 
